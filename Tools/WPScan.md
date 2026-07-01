@@ -87,16 +87,21 @@ flowchart TD
     B --> C[Enumerate Users, Plugins & Themes]
     C --> D[Identify Potential Vulnerable Components]
     D --> E[Lookup Vulnerabilities (WPVulnDB)]
-    E --> F[Manually Validate Findings]
-    F --> G[Generate Report & Remediation Plan]
+    E --> F{Vulnerable Component Found?}
+    F -->|Yes| G[Manually Validate Findings]
+    F -->|No| H[Extend Scan Configuration]
+    H --> C
+    G --> I[Generate Report & Remediation Plan]
 
     classDef start fill:#D6E9FF,stroke:#145DA0,stroke-width:2px,color:#092B4B;
     classDef process fill:#FFFFFF,stroke:#1C6DD0,stroke-width:1.5px,color:#0D1B2A;
+    classDef decision fill:#FFF4CC,stroke:#E09F3E,color:#BF360C;
     classDef endNode fill:#DCEED9,stroke:#2E7D32,stroke-width:2px,color:#1B5E20;
 
-    class A start;
-    class B,C,D,E process;
-    class G endNode;
+    class A,B start;
+    class C,D,E,H process;
+    class F decision;
+    class I endNode;
 ```
 
 ---

@@ -76,16 +76,21 @@ flowchart TD
 	B --> C[Discover Parameters & Inputs]
 	C --> D[Run Detection Modules (XSS, SQLi, etc.)]
 	D --> E[Collect Suspicious Responses]
-	E --> F[Generate Report]
-	F --> G[Manually Validate Findings]
+	E --> F{Findings Suspicious?}
+	F -->|Yes| G[Generate Report]
+	F -->|No| H[Refine Scan or Parameters]
+	H --> C
+	G --> I[Manually Validate Findings]
 
 	classDef start fill:#D6E9FF,stroke:#145DA0,stroke-width:2px,color:#092B4B;
 	classDef process fill:#FFFFFF,stroke:#1C6DD0,stroke-width:1.5px,color:#0D1B2A;
+	classDef decision fill:#FFF4CC,stroke:#E09F3E,color:#BF360C;
 	classDef endNode fill:#DCEED9,stroke:#2E7D32,stroke-width:2px,color:#1B5E20;
 
-	class A start;
-	class B,C,D,E process;
-	class G endNode;
+	class A,B start;
+	class C,D,E,H process;
+	class F decision;
+	class I endNode;
 ```
 
 ---
