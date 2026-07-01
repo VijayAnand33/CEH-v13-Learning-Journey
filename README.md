@@ -24,8 +24,8 @@ Unlike traditional notes, this repository focuses on understanding cybersecurity
 Modules/
 Tools/
 CheatSheets/
-Images/
 Resources/
+
 ```
 
 ---

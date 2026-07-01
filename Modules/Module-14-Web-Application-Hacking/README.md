@@ -105,6 +105,12 @@ The objective of this task was to collect information about the target web appli
 - Retrieved HTTP response headers through Telnet, revealing information about the web server and underlying technologies.
 - Gathered reconnaissance data that can be used to identify known vulnerabilities and plan further testing activities.
 
+#### Scan Result
+
+![Nmap Scan Result](Images/Lab1-Nmap-Scan.png)
+
+*Figure 1.1 – Nmap scan identifying open ports, running services, HTTP methods, server information, and operating system details during the reconnaissance phase.*
+
 #### Learning Outcome
 
 This task demonstrated that effective penetration testing begins with thorough reconnaissance rather than immediate exploitation. By understanding the target's infrastructure, technologies, and exposed services, a penetration tester can make informed decisions, reduce unnecessary guesswork, and plan a structured approach for identifying and validating security vulnerabilities.
@@ -132,6 +138,12 @@ The purpose of this task was to map the structure of the web application and ide
 - Generated a site map representing the application's structure.
 - Discovered endpoints that could be analyzed further during security testing.
 
+#### Spider Results
+
+![OWASP ZAP Spider](Images/Lab1-ZAP-Site-Tree.png)
+
+*Figure 1.2 – OWASP ZAP spider discovering the application's pages, directories, and resources to build a complete site structure for further assessment.*
+
 #### Learning Outcome
 
 This task demonstrated that web spidering is an essential reconnaissance technique for understanding a web application's structure. By automatically discovering accessible resources, penetration testers can ensure that security assessments cover a larger attack surface instead of testing only the pages that are immediately visible.
@@ -158,6 +170,12 @@ The purpose of this task was to proactively identify potential security weakness
 - Detected potential security issues based on known vulnerability signatures.
 - Generated a vulnerability report that can be used for further analysis and validation.
 - Observed that automated scanners provide a rapid overview of an application's security posture but require manual verification to eliminate false positives.
+
+#### Vulnerability Scan Report
+
+![SmartScanner Report](Images/Lab1-SmartScanner-Report.png)
+
+*Figure 1.3 – SmartScanner identifying multiple web application security issues and presenting an overall risk assessment of the target.*
 
 #### Learning Outcome
 
@@ -240,6 +258,18 @@ The purpose of this task was to understand how authentication mechanisms can be 
 - Compared HTTP response codes and response lengths to identify successful login attempts.
 - Identified a valid set of credentials from the provided payload list.
 
+#### Intercepted HTTP Request
+
+![Burp Proxy](Images/Lab2-Burp-Proxy.png)
+
+*Figure 2.1 – Burp Suite Proxy intercepting an HTTP request before it reached the web application, allowing inspection and modification.*
+
+#### Brute-Force Results
+
+![Burp Intruder](Images/Lab2-Burp-Intruder.png)
+
+*Figure 2.2 – Burp Intruder performing a controlled brute-force attack and identifying valid credentials by analyzing differences in server responses.*
+
 #### Learning Outcome
 
 This task demonstrated how authentication requests can be intercepted, modified, and replayed during penetration testing. It also reinforced that successful authentication indicates valid credentials but does not necessarily imply administrative access or ownership of the account.
@@ -267,6 +297,18 @@ The purpose of this task was to understand how publicly known vulnerabilities in
 - Identified a plugin vulnerable to Remote Code Execution.
 - Successfully executed a controlled command through the vulnerable endpoint.
 - Verified that insecure or outdated plugins can expose critical security risks.
+
+#### WordPress Enumeration
+
+![WPScan Enumeration](Images/Lab2-WPScan-Enumeration.png)
+
+*Figure 2.3 – WPScan enumerating the WordPress installation and identifying vulnerable plugins for further security assessment.*
+
+#### Remote Code Execution
+
+![RCE Success](Images/Lab2-RCE-Success.png)
+
+*Figure 2.4 – Successful Remote Code Execution (RCE) demonstrating that arbitrary commands could be executed on the vulnerable server.*
 
 #### Learning Outcome
 
@@ -351,6 +393,12 @@ The purpose of this task was to understand how automated web vulnerability scann
 - Generated a detailed HTML report summarizing the detected findings.
 - Observed that vulnerability reports categorize findings based on security testing standards and require manual verification before confirming exploitability.
 
+#### Vulnerability Assessment Report
+
+![Wapiti Report](Images/Lab3-Wapiti-Report.png)
+
+*Figure 3.1 – Wapiti vulnerability assessment report summarizing the security issues identified during automated web application testing.*
+
 #### Learning Outcome
 
 This task demonstrated the effectiveness of automated vulnerability scanners in identifying potential security issues across large web applications. It also reinforced that automated scanning serves as an initial assessment and should always be complemented with manual validation and penetration testing.
@@ -428,6 +476,12 @@ The purpose of this task was to understand how AI can enhance penetration testin
 - Security concepts and tool usage were explained interactively.
 - AI accelerated command generation and learning during the assessment.
 - Human verification remained necessary before executing AI-generated commands or drawing security conclusions.
+
+#### AI-Assisted Security Testing
+
+![ShellGPT](Images/Lab4-ShellGPT.png)
+
+*Figure 4.1 – ShellGPT assisting the penetration testing workflow by generating commands and providing AI-assisted technical guidance.*
 
 #### Learning Outcome
 
