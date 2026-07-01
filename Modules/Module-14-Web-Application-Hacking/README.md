@@ -170,13 +170,13 @@ This task demonstrated the importance of automated vulnerability scanning during
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#D0E8FF', 'primaryTextColor': '#092B4B', 'primaryBorderColor': '#1C6DD0', 'lineColor': '#2A7EE0', 'secondaryColor': '#EBF5FF', 'tertiaryColor': '#BBDFFF'}}}%%
 flowchart TD
-    A[Target Web Application] --> B[Reconnaissance using Nmap & Telnet]
-    B --> C[Identify Open Ports & Services]
-    C --> D[Web Spidering using OWASP ZAP]
-    D --> E[Discover Pages & Directories]
-    E --> F[Vulnerability Scanning using SmartScanner]
-    F --> G[Identify Potential Vulnerabilities]
-    G --> H[Prepare for Exploitation]
+    A["Target Web Application"] --> B["Reconnaissance using Nmap & Telnet"]
+    B --> C["Identify Open Ports & Services"]
+    C --> D["Web Spidering using OWASP ZAP"]
+    D --> E["Discover Pages & Directories"]
+    E --> F["Vulnerability Scanning using SmartScanner"]
+    F --> G["Identify Potential Vulnerabilities"]
+    G --> H["Prepare for Exploitation"]
 
     classDef start fill:#D6E9FF,stroke:#145DA0,stroke-width:2px,color:#092B4B;
     classDef process fill:#FFFFFF,stroke:#1C6DD0,stroke-width:1.5px,color:#0D1B2A;
@@ -279,15 +279,15 @@ This task demonstrated how attackers may leverage vulnerable web application com
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#D0E8FF', 'primaryTextColor': '#092B4B', 'primaryBorderColor': '#1C6DD0', 'lineColor': '#2A7EE0', 'secondaryColor': '#EBF5FF', 'tertiaryColor': '#BBDFFF'}}}%%
 flowchart TD
-    A[Target Web Application] --> B[Intercept Login Request (Burp Suite Proxy)]
-    B --> C[Capture HTTP Request]
-    C --> D[Configure Burp Intruder]
-    D --> E[Perform Brute-force Attack]
-    E --> F[Identify Valid Credentials]
-    F --> G[WordPress Enumeration (WPScan)]
-    G --> H[Identify Vulnerable Plugin]
-    H --> I[Exploit Remote Code Execution]
-    I --> J[Execute Commands on Target Server]
+    A["Target Web Application"] --> B["Intercept Login Request (Burp Suite Proxy)"]
+    B --> C["Capture HTTP Request"]
+    C --> D["Configure Burp Intruder"]
+    D --> E["Perform Brute-force Attack"]
+    E --> F["Identify Valid Credentials"]
+    F --> G["WordPress Enumeration (WPScan)"]
+    G --> H["Identify Vulnerable Plugin"]
+    H --> I["Exploit Remote Code Execution"]
+    I --> J["Execute Commands on Target Server"]
 
     classDef start fill:#D6E9FF,stroke:#145DA0,stroke-width:2px,color:#092B4B;
     classDef process fill:#FFFFFF,stroke:#1C6DD0,stroke-width:1.5px,color:#0D1B2A;
@@ -361,11 +361,11 @@ This task demonstrated the effectiveness of automated vulnerability scanners in 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#D0E8FF', 'primaryTextColor': '#092B4B', 'primaryBorderColor': '#1C6DD0', 'lineColor': '#2A7EE0', 'secondaryColor': '#EBF5FF', 'tertiaryColor': '#BBDFFF'}}}%%
 flowchart TD
-    A[Target Web Application] --> B[Web Crawling (Wapiti)]
-    B --> C[Analyze Pages & Parameters]
-    C --> D[Detect Potential Vulnerabilities]
-    D --> E[Generate HTML Report]
-    E --> F[Review & Validate Findings]
+    A["Target Web Application"] --> B["Web Crawling (Wapiti)"]
+    B --> C["Analyze Pages & Parameters"]
+    C --> D["Detect Potential Vulnerabilities"]
+    D --> E["Generate HTML Report"]
+    E --> F["Review & Validate Findings"]
 
     classDef start fill:#D6E9FF,stroke:#145DA0,stroke-width:2px,color:#092B4B;
     classDef process fill:#FFFFFF,stroke:#1C6DD0,stroke-width:1.5px,color:#0D1B2A;
@@ -440,12 +440,12 @@ This task demonstrated that AI can serve as an effective assistant during penetr
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#D0E8FF', 'primaryTextColor': '#092B4B', 'primaryBorderColor': '#1C6DD0', 'lineColor': '#2A7EE0', 'secondaryColor': '#EBF5FF', 'tertiaryColor': '#BBDFFF'}}}%%
 flowchart TD
-    A[Security Testing Objective] --> B[Prompt ShellGPT]
-    B --> C[Generate Security Commands & Guidance]
-    C --> D[Review AI Response]
-    D --> E[Validate Commands]
-    E --> F[Execute Security Assessment]
-    F --> G[Analyze Results]
+    A["Security Testing Objective"] --> B["Prompt ShellGPT"]
+    B --> C["Generate Security Commands & Guidance"]
+    C --> D["Review AI Response"]
+    D --> E["Validate Commands"]
+    E --> F["Execute Security Assessment"]
+    F --> G["Analyze Results"]
 
     classDef start fill:#D6E9FF,stroke:#145DA0,stroke-width:2px,color:#092B4B;
     classDef process fill:#FFFFFF,stroke:#1C6DD0,stroke-width:1.5px,color:#0D1B2A;
@@ -453,7 +453,7 @@ flowchart TD
 
     class A start;
     class B,C,D,E,F process;
-    class J endNode;
+    class G endNode;
 ```
 
 ---
