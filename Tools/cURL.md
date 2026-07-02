@@ -153,8 +153,6 @@ curl -i "http://<Target-IP>/wp-admin/admin-ajax.php?action=..."
 
 - Module 14 – Web Application Hacking
 
-*(This list will be expanded as additional modules are completed.)*
-
 ---
 
 ## Related Tools

@@ -152,4 +152,4 @@ wpscan --url https://target.example --enumerate p --api-token $WPVULNDB_TOKEN --
 ## References
 
 - Official: https://wpscan.com/
- - Documentation: https://github.com/wpscanteam/wpscan
+- Documentation: https://github.com/wpscanteam/wpscan

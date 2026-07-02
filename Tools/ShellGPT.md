@@ -159,8 +159,7 @@
  ## Used In
 
  - Module 14 – Web Application Hacking
-
- *(This list will be expanded as additional modules are completed.)*
+ - Module 15 – SQL Injection
 
  ---
 

@@ -112,7 +112,6 @@ During **Module 14 – Web Application Hacking**, SmartScanner was used to perfo
 
 - Module 14 – Web Application Hacking
 
-*(This list will be expanded as additional modules are completed.)*
 
 ---
 
@@ -127,4 +126,4 @@ During **Module 14 – Web Application Hacking**, SmartScanner was used to perfo
 
 ## References
 
-- Product Documentation (if available)
+- No official public documentation is available. This tool is provided as part of the EC-Council CEH Practical Labs.
