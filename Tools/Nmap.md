@@ -156,6 +156,7 @@ The aggressive scan provided information such as:
 ## Used In
 
 - Module 03 – Scanning Networks
+- Module 04 – Enumeration
 - Module 14 – Web Application Hacking
 
 ---
