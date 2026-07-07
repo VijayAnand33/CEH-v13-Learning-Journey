@@ -122,23 +122,27 @@ The host discovery results established the foundation for subsequent port scanni
 
 ---
 
-### Figures
+### ARP Ping Scan
 
 ![ARP Ping Scan](Images/Lab1-ARP-Ping-Scan.png)
 
-**Figure 1.1:** ARP Ping Scan successfully identified the target host by sending ARP requests and receiving ARP responses, confirming that the system was active on the local network.
+*Figure 1.1 – ARP Ping Scan successfully identified the target host by sending ARP requests and receiving ARP responses, confirming that the system was active on the local network.*
 
 ---
+
+### ICMP Echo Ping Sweep
 
 ![ICMP Echo Ping Sweep](Images/Lab1-ICMP-Ping-Sweep.png)
 
-**Figure 1.2:** ICMP Echo Ping Sweep discovered multiple active hosts within the target IP address range, demonstrating how Nmap efficiently identifies live systems across a subnet before further network scanning.
+*Figure 1.2 – ICMP Echo Ping Sweep discovered multiple active hosts within the target IP address range, demonstrating how Nmap efficiently identifies live systems across a subnet before further network scanning.*
 
 ---
 
+### ICMP Timestamp Ping Scan
+
 ![ICMP Timestamp Ping Scan](Images/Lab1-ICMP-Timestamp-Ping.png)
 
-**Figure 1.3:** ICMP Timestamp Ping Scan verified host availability by requesting timestamp information from the target, illustrating an alternative host discovery technique when standard ICMP Echo requests are unavailable or filtered.
+*Figure 1.3 – ICMP Timestamp Ping Scan verified host availability by requesting timestamp information from the target, illustrating an alternative host discovery technique when standard ICMP Echo requests are unavailable or filtered.*
 
 ---
 
@@ -170,7 +174,7 @@ flowchart LR
 
 ---
 
-### Overall Learning Outcome
+## Overall Learning Outcome
 
 This lab demonstrated how multiple Nmap host discovery techniques can be used to accurately identify active systems within a target network using different network protocols. By comparing ARP, UDP, and ICMP-based discovery methods, it reinforced the importance of host discovery as the foundation for effective network scanning, service enumeration, and subsequent penetration testing activities.
 
@@ -210,7 +214,7 @@ Throughout the exercise, the impact of Windows Defender Firewall on scan results
 
 ---
 
-### Observations
+## Observations
 
 - Successfully identified open TCP and UDP ports on the target host.
 - Enumerated the services associated with the discovered open ports.
@@ -222,29 +226,35 @@ Throughout the exercise, the impact of Windows Defender Firewall on scan results
 
 ---
 
-### Figures
+### TCP Connect Scan
 
 ![TCP Connect Scan](Images/Lab2-TCP-Connect-Scan.png)
 
-**Figure 2.1:** TCP Connect Scan identified open TCP ports and the services running on the target host by completing the TCP three-way handshake.
+*Figure 2.1 – TCP Connect Scan identified open TCP ports and the services running on the target host by completing the TCP three-way handshake.*
 
 ---
+
+### Xmas Scan
 
 ![Xmas Scan](Images/Lab2-Xmas-Scan.png)
 
-**Figure 2.2:** Xmas Scan demonstrated the effect of firewall filtering by reporting ports as **Open|Filtered**, illustrating how specialized scan types can be used to infer firewall behavior.
+*Figure 2.2 – Xmas Scan demonstrated the effect of firewall filtering by reporting ports as **Open|Filtered**, illustrating how specialized scan types can be used to infer firewall behavior.*
 
 ---
+
+### Service Version Detection
 
 ![Service Version Detection](Images/Lab2-Service-Version-Detection.png)
 
-**Figure 2.3:** Service Version Detection enumerated the applications and versions running on the discovered ports, providing valuable information for vulnerability assessment and exploit selection.
+*Figure 2.3 – Service Version Detection enumerated the applications and versions running on the discovered ports, providing valuable information for vulnerability assessment and exploit selection.*
 
 ---
 
+### Aggressive Scan Host Details
+
 ![Aggressive Scan Host Details](Images/Lab2-Aggressive-Scan-Host-Details.png)
 
-**Figure 2.4:** Aggressive Scan consolidated operating system detection, service enumeration, default script execution, and host information into a comprehensive network profile of the target system.
+*Figure 2.4 – Aggressive Scan consolidated operating system detection, service enumeration, default script execution, and host information into a comprehensive network profile of the target system.*
 
 ---
 
@@ -276,7 +286,7 @@ flowchart LR
 
 ---
 
-### Overall Learning Outcome
+## Overall Learning Outcome
 
 This lab demonstrated how Nmap can be used to perform comprehensive port and service discovery using multiple scanning techniques. By comparing different scan types and analyzing their results, the lab highlighted how penetration testers gather detailed information about target systems, identify exposed services, detect operating systems, and evaluate firewall behavior to build an accurate attack surface for subsequent security assessments.
 
@@ -325,23 +335,27 @@ Finally, the Nmap Scripting Engine (NSE) was used with the `smb-os-discovery.nse
 
 ---
 
-### Figures
+### Aggressive Scan
 
 ![Aggressive Scan](Images/Lab3-Aggressive-Scan.png)
 
-**Figure 3.1:** Aggressive Scan combined operating system detection, service enumeration, version detection, and host script execution to generate a comprehensive profile of the target system.
+*Figure 3.1 – Aggressive Scan combined operating system detection, service enumeration, version detection, and host script execution to generate a comprehensive profile of the target system.*
 
 ---
+
+### Operating System Detection
 
 ![Operating System Detection](Images/Lab3-OS-Detection.png)
 
-**Figure 3.2:** Nmap OS Detection fingerprinted the target operating system by analyzing responses to specially crafted network probes.
+*Figure 3.2 – Nmap OS Detection fingerprinted the target operating system by analyzing responses to specially crafted network probes.*
 
 ---
 
+### NSE SMB OS Discovery
+
 ![NSE SMB OS Discovery](Images/Lab3-NSE-SMB-OS-Discovery.png)
 
-**Figure 3.3:** The `smb-os-discovery.nse` script extracted detailed host information, including the operating system, computer name, NetBIOS information, and domain details through the SMB service.
+*Figure 3.3 – The `smb-os-discovery.nse` script extracted detailed host information, including the operating system, computer name, NetBIOS information, and domain details through the SMB service.*
 
 ---
 
@@ -371,7 +385,7 @@ flowchart LR
 
 ---
 
-### Overall Learning Outcome
+## Overall Learning Outcome
 
 This lab demonstrated how Nmap and the Nmap Scripting Engine can be used to identify operating systems and gather detailed host information through active fingerprinting and protocol-specific scripts. The collected intelligence enhances situational awareness, supports vulnerability assessment, and helps penetration testers build an accurate profile of the target environment before attempting further exploitation.
 
@@ -423,29 +437,35 @@ These techniques demonstrated how changes to packet structure and source informa
 
 ---
 
-### Figures
+### Packet Fragmentation Scan
 
 ![Packet Fragmentation Scan](Images/Lab4-Packet-Fragmentation-Scan.png)
 
-**Figure 4.1:** Packet Fragmentation Scan successfully discovered open ports while transmitting fragmented probe packets, demonstrating an effective firewall evasion technique.
+*Figure 4.1 – Packet Fragmentation Scan successfully discovered open ports while transmitting fragmented probe packets, demonstrating an effective firewall evasion technique.*
 
 ---
+
+### Fragmented Packets in Wireshark
 
 ![Fragmented Packets in Wireshark](Images/Lab4-Fragmented-Packets-Wireshark.png)
 
-**Figure 4.2:** Wireshark captured fragmented IP packets generated during the scan, confirming that packet fragmentation was successfully applied.
+*Figure 4.2 – Wireshark captured fragmented IP packets generated during the scan, confirming that packet fragmentation was successfully applied.*
 
 ---
+
+### Source Port Manipulation
 
 ![Source Port Manipulation](Images/Lab4-Source-Port-Manipulation.png)
 
-**Figure 4.3:** Source Port Manipulation performed network scanning using TCP source port 80, illustrating how trusted ports may be used to bypass restrictive firewall rules.
+*Figure 4.3 – Source Port Manipulation performed network scanning using TCP source port 80, illustrating how trusted ports may be used to bypass restrictive firewall rules.*
 
 ---
 
+### IP Address Decoy
+
 ![IP Address Decoy](Images/Lab4-IP-Decoy-Wireshark.png)
 
-**Figure 4.4:** Wireshark captured multiple spoofed source IP addresses generated during the decoy scan, demonstrating how Nmap conceals the actual scanning host among randomly generated decoys.
+*Figure 4.4 – Wireshark captured multiple spoofed source IP addresses generated during the decoy scan, demonstrating how Nmap conceals the actual scanning host among randomly generated decoys.*
 
 ---
 
@@ -475,7 +495,7 @@ flowchart LR
 
 ---
 
-### Overall Learning Outcome
+## Overall Learning Outcome
 
 This lab demonstrated how Nmap employs multiple packet manipulation and traffic obfuscation techniques to evade firewall and intrusion detection mechanisms during network scanning. By combining packet fragmentation, source port manipulation, MTU modification, and IP address decoys, the assessment highlighted both the offensive value of scan evasion techniques and the importance of properly configured security controls for detecting advanced reconnaissance activities.
 
@@ -527,29 +547,35 @@ These activities demonstrated how Metasploit extends traditional network scannin
 
 ---
 
-### Figures
+### Nmap Network Scan
 
 ![Nmap Network Scan](Images/Lab5-Nmap-Network-Scan.png)
 
-**Figure 5.1:** Nmap executed within the Metasploit Framework identified active hosts, open ports, services, and operating system information across the target subnet.
+*Figure 5.1 – Nmap executed within the Metasploit Framework identified active hosts, open ports, services, and operating system information across the target subnet.*
 
 ---
+
+### SYN Port Scan
 
 ![SYN Port Scan](Images/Lab5-SYN-Port-Scan.png)
 
-**Figure 5.2:** The Metasploit SYN Port Scanner identified hosts exposing TCP port 80, demonstrating efficient reconnaissance using auxiliary scanning modules.
+*Figure 5.2 – The Metasploit SYN Port Scanner identified hosts exposing TCP port 80, demonstrating efficient reconnaissance using auxiliary scanning modules.*
 
 ---
+
+### TCP Port Scan
 
 ![TCP Port Scan](Images/Lab5-TCP-Port-Scan.png)
 
-**Figure 5.3:** The TCP Port Scanner enumerated open TCP ports on the target system, providing detailed information about exposed network services.
+*Figure 5.3 – The TCP Port Scanner enumerated open TCP ports on the target system, providing detailed information about exposed network services.*
 
 ---
 
+### SMB Version Scan
+
 ![SMB Version Scan](Images/Lab5-SMB-Version-Scan.png)
 
-**Figure 5.4:** The SMB Version Scanner identified the operating system and SMB implementation of target hosts by querying exposed SMB services.
+*Figure 5.4 – The SMB Version Scanner identified the operating system and SMB implementation of target hosts by querying exposed SMB services.*
 
 ---
 
@@ -579,7 +605,7 @@ flowchart LR
 
 ---
 
-### Overall Learning Outcome
+## Overall Learning Outcome
 
 This lab demonstrated how the Metasploit Framework can be used beyond exploitation to perform comprehensive network reconnaissance. By leveraging Nmap and Metasploit's auxiliary scanning modules, detailed information about hosts, open ports, services, and operating systems was collected, providing a strong foundation for vulnerability analysis and subsequent penetration testing activities.
 
@@ -632,23 +658,27 @@ Throughout the exercise, ShellGPT acted as an intelligent command-generation ass
 
 ---
 
-### Figures
+### ShellGPT Network Scan
 
 ![ShellGPT Network Scan](Images/Lab6-ShellGPT-Network-Scan.png)
 
-**Figure 6.1:** ShellGPT generated and executed Nmap commands to perform automated network reconnaissance, producing consolidated scan results for the target network.
+*Figure 6.1 – ShellGPT generated and executed Nmap commands to perform automated network reconnaissance, producing consolidated scan results for the target network.*
 
 ---
+
+### ShellGPT OS Discovery
 
 ![ShellGPT OS Discovery](Images/Lab6-ShellGPT-OS-Discovery.png)
 
-**Figure 6.2:** AI-generated Nmap NSE commands successfully identified operating system information for the discovered hosts, demonstrating intelligent command generation for advanced reconnaissance tasks.
+*Figure 6.2 – AI-generated Nmap NSE commands successfully identified operating system information for the discovered hosts, demonstrating intelligent command generation for advanced reconnaissance tasks.*
 
 ---
 
+### ShellGPT Python Automation
+
 ![ShellGPT Python Automation](Images/Lab6-ShellGPT-Python-Automation.png)
 
-**Figure 6.3:** ShellGPT generated a Python automation script capable of performing comprehensive network scanning and vulnerability assessment, illustrating the use of AI for cybersecurity workflow automation.
+*Figure 6.3 – ShellGPT generated a Python automation script capable of performing comprehensive network scanning and vulnerability assessment, illustrating the use of AI for cybersecurity workflow automation.*
 
 ### Learning Outcome
 
@@ -676,7 +706,7 @@ flowchart LR
 
 ---
 
-### Overall Learning Outcome
+## Overall Learning Outcome
 
 This lab demonstrated how artificial intelligence can streamline network reconnaissance by generating accurate commands for host discovery, port scanning, operating system detection, and automation. By integrating ShellGPT with traditional penetration testing tools, the assessment highlighted how AI enhances efficiency, reduces repetitive manual effort, and supports modern cybersecurity workflows without replacing established security methodologies.
 

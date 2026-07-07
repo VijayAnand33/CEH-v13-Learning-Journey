@@ -125,17 +125,19 @@ These built-in utilities demonstrated how valuable reconnaissance information ca
 
 ---
 
-#### Figures
+### NetBIOS Name Table
 
 ![NetBIOS Name Table](Images/Lab1-NetBIOS-Name-Table.png)
 
-**Figure 1.1:** The `nbtstat -a` command enumerated the remote system's NetBIOS name table, revealing registered NetBIOS names, services, and host information.
+*Figure 1.1 – The `nbtstat -a` command enumerated the remote system's NetBIOS name table, revealing registered NetBIOS names, services, and host information.*
 
 ---
 
+### Net Use Enumeration
+
 ![Net Use Enumeration](Images/Lab1-Net-Use.png)
 
-**Figure 1.2:** The `net use` command displayed existing network connections and shared resources that may be useful during network enumeration.
+*Figure 1.2 – The `net use` command displayed existing network connections and shared resources that may be useful during network enumeration.*
 
 ---
 
@@ -210,11 +212,11 @@ The results demonstrated how improperly secured SNMP services can disclose sensi
 
 ---
 
-#### Figures
+### SNMP Enumeration
 
 ![SNMP Enumeration](Images/Lab2-SNMP-Enumeration.png)
 
-**Figure 2.1:** SnmpWalk enumerated the target system by traversing the Management Information Base (MIB), revealing accessible Object Identifiers (OIDs) and associated system information.
+*Figure 2.1 – SnmpWalk enumerated the target system by traversing the Management Information Base (MIB), revealing accessible Object Identifiers (OIDs) and associated system information.*
 
 ---
 
@@ -290,17 +292,19 @@ The exercise demonstrated how LDAP enumeration provides detailed information abo
 
 ---
 
-#### Figures
+### Active Directory Structure
 
 ![Active Directory Structure](Images/Lab3-ADExplorer-Domain-Structure.png)
 
-**Figure 3.1:** AD Explorer successfully connected to the target Active Directory domain and displayed the hierarchical LDAP directory structure.
+*Figure 3.1 – AD Explorer successfully connected to the target Active Directory domain and displayed the hierarchical LDAP directory structure.*
 
 ---
 
+### User Account Properties
+
 ![User Account Properties](Images/Lab3-ADExplorer-User-Properties.png)
 
-**Figure 3.2:** AD Explorer displayed detailed LDAP attributes associated with a selected domain user account.
+*Figure 3.2 – AD Explorer displayed detailed LDAP attributes associated with a selected domain user account.*
 
 ---
 
@@ -377,17 +381,19 @@ RPCScan was then used to enumerate Remote Procedure Call (RPC) services associat
 
 ---
 
-#### Figures
+### SuperEnum NFS Enumeration
 
 ![SuperEnum NFS Enumeration](Images/Lab4-SuperEnum-NFS-Enumeration.png)
 
-**Figure 4.1:** SuperEnum enumerated the target host and identified the NFS service along with other accessible network services.
+*Figure 4.1 – SuperEnum enumerated the target host and identified the NFS service along with other accessible network services.*
 
 ---
 
+### RPCScan Enumeration
+
 ![RPCScan Enumeration](Images/Lab4-RPCScan-Enumeration.png)
 
-**Figure 4.2:** RPCScan enumerated the target's RPC services and verified the availability of the NFS service on the target system.
+*Figure 4.2 – RPCScan enumerated the target's RPC services and verified the availability of the NFS service on the target system.*
 
 ---
 
@@ -463,17 +469,19 @@ The enumeration successfully retrieved DNS server information, while the zone tr
 
 ---
 
-#### Figures
+### DNS Enumeration
 
 ![DNS Enumeration](Images/Lab5-DNS-Enumeration-dig.png)
 
-**Figure 5.1:** The `dig` utility enumerated the target domain's authoritative DNS name servers by querying DNS records.
+*Figure 5.1 – The `dig` utility enumerated the target domain's authoritative DNS name servers by querying DNS records.*
 
 ---
 
+### DNS Zone Transfer Attempt
+
 ![DNS Zone Transfer Attempt](Images/Lab5-DNS-Zone-Transfer.png)
 
-**Figure 5.2:** A DNS zone transfer request was attempted using command-line utilities. The target DNS server refused the request, preventing unauthorized disclosure of DNS zone information.
+*Figure 5.2 – A DNS zone transfer request was attempted using command-line utilities. The target DNS server refused the request, preventing unauthorized disclosure of DNS zone information.*
 
 ---
 
@@ -549,17 +557,19 @@ The enumeration demonstrated how SMTP services can expose valuable information t
 
 ---
 
-#### Figures
+### SMTP User Enumeration
 
 ![SMTP User Enumeration](Images/Lab6-SMTP-User-Enumeration.png)
 
-**Figure 6.1:** The `smtp-enum-users` NSE script enumerated potential mail user accounts configured on the target SMTP server.
+*Figure 6.1 – The `smtp-enum-users` NSE script enumerated potential mail user accounts configured on the target SMTP server.*
 
 ---
 
+### SMTP Open Relay Test
+
 ![SMTP Open Relay Test](Images/Lab6-SMTP-Open-Relay.png)
 
-**Figure 6.2:** The `smtp-open-relay` NSE script assessed whether the target SMTP server permitted unauthorized mail relaying.
+*Figure 6.2 – The `smtp-open-relay` NSE script assessed whether the target SMTP server permitted unauthorized mail relaying.*
 
 ---
 
@@ -633,23 +643,27 @@ The audit results were presented through categorized views, enabling detailed in
 
 ---
 
-#### Figures
+### Global Network Inventory Scan Summary
 
 ![Global Network Inventory Scan Summary](Images/Lab7-GNI-Scan-Summary.png)
 
-**Figure 7.1:** Global Network Inventory completed the audit and displayed a summary of the collected information for the target system.
+*Figure 7.1 – Global Network Inventory completed the audit and displayed a summary of the collected information for the target system.*
 
 ---
+
+### Operating System Enumeration
 
 ![Operating System Enumeration](Images/Lab7-GNI-Operating-System.png)
 
-**Figure 7.2:** The Operating System view displayed detailed information about the target machine's operating system and configuration.
+*Figure 7.2 – The Operating System view displayed detailed information about the target machine's operating system and configuration.*
 
 ---
 
+### Installed Software Enumeration
+
 ![Installed Software Enumeration](Images/Lab7-GNI-Installed-Software.png)
 
-**Figure 7.3:** Global Network Inventory enumerated the software installed on the target system, providing valuable asset and application information.
+*Figure 7.3 – Global Network Inventory enumerated the software installed on the target system, providing valuable asset and application information.*
 
 ---
 
@@ -723,23 +737,27 @@ In addition to generating individual enumeration commands, ShellGPT was used to 
 
 ---
 
-#### Figures
+### ShellGPT NetBIOS Enumeration
 
 ![ShellGPT NetBIOS Enumeration](Images/Lab8-ShellGPT-NetBIOS-Enumeration.png)
 
-**Figure 8.1:** ShellGPT generated and executed commands to perform NetBIOS enumeration on the target system.
+*Figure 8.1 – ShellGPT generated and executed commands to perform NetBIOS enumeration on the target system.*
 
 ---
+
+### ShellGPT SNMP Enumeration
 
 ![ShellGPT SNMP Enumeration](Images/Lab8-ShellGPT-SNMP-Enumeration.png)
 
-**Figure 8.2:** ShellGPT generated commands for SNMP enumeration using existing security tools.
+*Figure 8.2 – ShellGPT generated commands for SNMP enumeration using existing security tools.*
 
 ---
 
+### ShellGPT Enumeration Automation
+
 ![ShellGPT Enumeration Automation](Images/Lab8-ShellGPT-Automation-Script.png)
 
-**Figure 8.3:** ShellGPT generated an automation script to perform multiple network enumeration tasks against the target environment.
+*Figure 8.3 – ShellGPT generated an automation script to perform multiple network enumeration tasks against the target environment.*
 
 ---
 

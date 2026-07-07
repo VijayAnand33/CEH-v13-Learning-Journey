@@ -87,15 +87,15 @@ After completing this module, I was able to:
 
 # Labs Covered
 
-## Lab 1 - Perform Footprinting Through Search Engines
+# Lab 1 - Perform Footprinting Through Search Engines
 
-### Objective
+## Objective
 
 To understand how advanced Google search operators can be used to gather publicly available information about a target organization and identify potential reconnaissance opportunities during the footprinting phase of a security assessment.
 
 ---
 
-### Background
+## Background
 
 Search engines index vast amounts of publicly accessible information, making them valuable sources of intelligence during reconnaissance. Advanced Google search operators, commonly known as Google Dorks, enable security professionals to refine search queries and discover specific information that may not be easily accessible through conventional searches.
 
@@ -103,15 +103,15 @@ This lab demonstrates how advanced Google search techniques can be used to ident
 
 ---
 
-### Task 1 - Gather Information using Advanced Google Hacking Techniques
+## Task 1 - Gather Information using Advanced Google Hacking Techniques
 
-#### Tools Used
+### Tools Used
 
 - [Google Search](../../Tools/Google-Search.md)
 
 ---
 
-#### Activity Performed
+### Activity Performed
 
 Advanced Google search operators were used to perform passive reconnaissance against the target organization's publicly available web resources. Search queries utilizing operators such as `intitle`, `site`, and `filetype` were executed to identify login pages and publicly accessible PDF documents associated with the organization's domain.
 
@@ -119,7 +119,7 @@ The discovered resources were analyzed to understand how search engine indexing 
 
 ---
 
-#### Observations
+### Observations
 
 - Advanced Google search operators successfully refined search results.
 - Login pages associated with the target organization's domain were identified.
@@ -129,7 +129,7 @@ The discovered resources were analyzed to understand how search engine indexing 
 
 ---
 
-#### Login Page Discovery
+### Login Page Discovery
 
 ![Google Dork Login Pages](Images/Lab1-Google-Dork-Login-Pages.png)
 
@@ -137,7 +137,7 @@ The discovered resources were analyzed to understand how search engine indexing 
 
 ---
 
-#### Public Document Search
+### Public Document Search
 
 ![Google Dork PDF Search](Images/Lab1-Google-Dork-PDF-Search.png)
 
@@ -145,7 +145,7 @@ The discovered resources were analyzed to understand how search engine indexing 
 
 ---
 
-#### Publicly Accessible PDF Document
+### Publicly Accessible PDF Document
 
 ![Public PDF Document](Images/Lab1-CEH-Brochure-PDF.png)
 
@@ -153,13 +153,13 @@ The discovered resources were analyzed to understand how search engine indexing 
 
 ---
 
-#### Learning Outcome
+### Learning Outcome
 
 This task demonstrated how advanced Google search operators can be leveraged during passive reconnaissance to gather publicly available information about a target organization. I understood how search engine indexing may expose login portals and documents that assist ethical hackers in building a comprehensive reconnaissance profile.
 
 ---
 
-#### Attack Flow
+### Attack Flow
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#D0E8FF', 'primaryTextColor': '#092B4B', 'primaryBorderColor': '#1C6DD0', 'lineColor': '#2A7EE0', 'secondaryColor': '#EBF5FF', 'tertiaryColor': '#BBDFFF'}}}%%
@@ -179,19 +179,19 @@ flowchart TD
     class F endNode;
 ```
 
-#### Overall Learning Outcome
+## Overall Learning Outcome
 
 This lab demonstrated how publicly available information indexed by search engines can be leveraged during passive footprinting to gather valuable intelligence about a target organization. I learned how advanced Google search operators improve reconnaissance efficiency by identifying exposed resources that contribute to effective security assessments.
 
-## Lab 2 - Perform Footprinting Through Internet Research Services
+# Lab 2 - Perform Footprinting Through Internet Research Services
 
-### Objective
+## Objective
 
 To understand how internet research services such as Netcraft and DNSDumpster can be used to gather publicly available information about a target organization's domains, subdomains, DNS infrastructure, and network hosts during the footprinting phase of a security assessment.
 
 ---
 
-### Background
+## Background
 
 Internet research services aggregate publicly available information from multiple sources, enabling security professionals to collect valuable intelligence about an organization's online presence without directly interacting with the target infrastructure. These services provide insights into domain ownership, hosting infrastructure, DNS records, subdomains, technologies, and network topology.
 
@@ -199,16 +199,16 @@ This lab demonstrates how Netcraft and DNSDumpster can be used to identify organ
 
 ---
 
-### Task 1 - Find the Company's Domains, Subdomains and Hosts using Netcraft and DNSDumpster
+## Task 1 - Find the Company's Domains, Subdomains and Hosts using Netcraft and DNSDumpster
 
-#### Tools Used
+## Tools Used
 
 - [Netcraft](../../Tools/Netcraft.md)
 - [DNSDumpster](../../Tools/DNSDumpster.md)
 
 ---
 
-#### Activity Performed
+### Activity Performed
 
 Internet-based reconnaissance was performed using Netcraft and DNSDumpster to gather publicly available information about the target organization's domain infrastructure. Netcraft was used to generate a comprehensive site report containing information related to the target's hosting environment, network infrastructure, and discovered subdomains.
 
@@ -216,7 +216,7 @@ DNSDumpster was then used to enumerate DNS records, identify mail servers, host 
 
 ---
 
-#### Observations
+## Observations
 
 - Netcraft successfully identified infrastructure and hosting information for the target domain.
 - Multiple subdomains associated with the target organization were discovered.
@@ -227,7 +227,7 @@ DNSDumpster was then used to enumerate DNS records, identify mail servers, host 
 
 ---
 
-#### Netcraft Site Report
+### Netcraft Site Report
 
 ![Netcraft Site Report](Images/Lab2-Netcraft-Site-Report.png)
 
@@ -235,7 +235,7 @@ DNSDumpster was then used to enumerate DNS records, identify mail servers, host 
 
 ---
 
-#### Subdomain Enumeration
+### Subdomain Enumeration
 
 ![Netcraft Subdomains](Images/Lab2-Netcraft-Subdomains.png)
 
@@ -243,7 +243,7 @@ DNSDumpster was then used to enumerate DNS records, identify mail servers, host 
 
 ---
 
-#### GeoIP Information
+## GeoIP Information
 
 ![DNSDumpster GeoIP](Images/Lab2-DNSDumpster-GEOIP.png)
 
@@ -251,7 +251,7 @@ DNSDumpster was then used to enumerate DNS records, identify mail servers, host 
 
 ---
 
-#### DNS Infrastructure
+### DNS Infrastructure
 
 ![DNS Records](Images/Lab2-DNSDumpster-DNS-Records.png)
 
@@ -259,7 +259,7 @@ DNSDumpster was then used to enumerate DNS records, identify mail servers, host 
 
 ---
 
-#### Domain Mapping
+### Domain Mapping
 
 ![DNSDumpster Domain Map](Images/Lab2-DNSDumpster-Domain-Map.png)
 
@@ -267,7 +267,7 @@ DNSDumpster was then used to enumerate DNS records, identify mail servers, host 
 
 ---
 
-#### Exported Host Information
+### Exported Host Information
 
 ![Host Information Spreadsheet](Images/Lab2-DNSDumpster-Hosts-Excel.png)
 
@@ -275,13 +275,13 @@ DNSDumpster was then used to enumerate DNS records, identify mail servers, host 
 
 ---
 
-#### Learning Outcome
+### Learning Outcome
 
 This task demonstrated how internet research services can be used to collect detailed information about an organization's publicly accessible infrastructure without directly interacting with the target systems. I understood how Netcraft and DNSDumpster assist ethical hackers in identifying domains, subdomains, DNS records, network hosts, and infrastructure components that contribute to an effective reconnaissance process.
 
 ---
 
-#### Attack Flow
+### Attack Flow
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#D0E8FF', 'primaryTextColor': '#092B4B', 'primaryBorderColor': '#1C6DD0', 'lineColor': '#2A7EE0', 'secondaryColor': '#EBF5FF', 'tertiaryColor': '#BBDFFF'}}}%%
@@ -304,21 +304,20 @@ flowchart TD
 
 ---
 
-#### Overall Learning Outcome
+## Overall Learning Outcome
 
 This lab demonstrated how internet research services simplify the collection of publicly available information during passive reconnaissance. By analyzing domain infrastructure, DNS records, subdomains, and network relationships, I learned how ethical hackers build comprehensive reconnaissance profiles that support subsequent penetration testing activities.
 
 ---
+# Lab 3 - Perform Footprinting Through Social Networking Sites
 
-## Lab 3 - Perform Footprinting Through Social Networking Sites
-
-### Objective
+## Objective
 
 To understand how publicly available information from social networking platforms can be collected using Sherlock to identify a target individual's online presence during the reconnaissance phase of a security assessment.
 
 ---
 
-### Background
+## Background
 
 Social networking platforms contain a significant amount of publicly available information that can be leveraged during Open Source Intelligence (OSINT) gathering. Attackers and ethical hackers often analyze social media profiles to identify personal details, employment information, organizational affiliations, and other publicly shared data that may contribute to further reconnaissance activities.
 
@@ -326,15 +325,15 @@ This lab demonstrates how Sherlock automates the process of searching multiple s
 
 ---
 
-### Task 1 - Gather Personal Information from Various Social Networking Sites using Sherlock
+## Task 1 - Gather Personal Information from Various Social Networking Sites using Sherlock
 
-#### Tools Used
+### Tools Used
 
 - [Sherlock](../../Tools/Sherlock.md)
 
 ---
 
-#### Activity Performed
+### Activity Performed
 
 Sherlock was used to perform social media reconnaissance by searching multiple online platforms for profiles associated with the specified target individual. The tool automatically queried numerous social networking websites and returned the URLs of publicly available profiles matching the supplied name.
 
@@ -342,7 +341,7 @@ The discovered profile links were reviewed to understand how publicly accessible
 
 ---
 
-#### Observations
+### Observations
 
 - Sherlock successfully searched multiple social networking platforms.
 - Publicly available profile URLs associated with the target were identified.
@@ -351,7 +350,7 @@ The discovered profile links were reviewed to understand how publicly accessible
 
 ---
 
-#### Social Media Profile Enumeration
+### Social Media Profile Enumeration
 
 ![Sherlock Results](Images/Lab3-Sherlock-Results.png)
 
@@ -359,13 +358,13 @@ The discovered profile links were reviewed to understand how publicly accessible
 
 ---
 
-#### Learning Outcome
+### Learning Outcome
 
 This task demonstrated how automated OSINT tools simplify the collection of publicly available information from social networking platforms. I understood how Sherlock assists ethical hackers by efficiently identifying online profiles that may reveal valuable intelligence during reconnaissance.
 
 ---
 
-#### Attack Flow
+### Attack Flow
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#D0E8FF', 'primaryTextColor': '#092B4B', 'primaryBorderColor': '#1C6DD0', 'lineColor': '#2A7EE0', 'secondaryColor': '#EBF5FF', 'tertiaryColor': '#BBDFFF'}}}%%
@@ -387,21 +386,21 @@ flowchart TD
 
 ---
 
-#### Overall Learning Outcome
+## Overall Learning Outcome
 
 This lab demonstrated how social networking platforms serve as valuable sources of publicly available intelligence during footprinting. By using Sherlock, I learned how ethical hackers efficiently identify online profiles that contribute to comprehensive Open Source Intelligence gathering and support subsequent security assessments.
 
 ---
 
-## Lab 4 - Perform Whois Footprinting
+# Lab 4 - Perform Whois Footprinting
 
-### Objective
+## Objective
 
 To understand how Whois lookup services can be used to gather publicly available domain registration information and identify infrastructure details about a target organization during the reconnaissance phase of a security assessment.
 
 ---
 
-### Background
+## Background
 
 Whois is an Internet protocol that provides publicly accessible registration information for domain names. Ethical hackers use Whois lookup services to obtain details such as domain ownership, registrar information, registration dates, name servers, IP addresses, and geographical location. This information helps build an initial profile of the target organization's infrastructure and supports further reconnaissance activities.
 
@@ -409,15 +408,15 @@ This lab demonstrates how DomainTools can be used to perform Whois lookups and a
 
 ---
 
-### Task 1 - Perform Whois Lookup using DomainTools
+## Task 1 - Perform Whois Lookup using DomainTools
 
-#### Tools Used
+### Tools Used
 
 - [DomainTools](../../Tools/DomainTools.md)
 
 ---
 
-#### Activity Performed
+### Activity Performed
 
 A Whois lookup was performed using DomainTools to collect publicly available registration information associated with the target domain. The returned Whois records were analyzed to identify domain ownership details, registration information, authoritative name servers, IP address information, and other infrastructure-related data.
 
@@ -425,7 +424,7 @@ The collected information was reviewed to understand how publicly available regi
 
 ---
 
-#### Observations
+### Observations
 
 - Whois records for the target domain were successfully retrieved.
 - Domain registration information was identified.
@@ -435,7 +434,7 @@ The collected information was reviewed to understand how publicly available regi
 
 ---
 
-#### Whois Lookup Results
+### Whois Lookup Results
 
 ![DomainTools Whois Lookup](Images/Lab4-DomainTools-Whois-Lookup.png)
 
@@ -443,13 +442,13 @@ The collected information was reviewed to understand how publicly available regi
 
 ---
 
-#### Learning Outcome
+### Learning Outcome
 
 This task demonstrated how publicly available Whois records can be used to gather valuable information about a target organization's domain infrastructure. I understood how domain registration details, name servers, and hosting information contribute to effective footprinting and support subsequent security assessments.
 
 ---
 
-#### Attack Flow
+### Attack Flow
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#D0E8FF', 'primaryTextColor': '#092B4B', 'primaryBorderColor': '#1C6DD0', 'lineColor': '#2A7EE0', 'secondaryColor': '#EBF5FF', 'tertiaryColor': '#BBDFFF'}}}%%
@@ -471,21 +470,21 @@ flowchart TD
 
 ---
 
-#### Overall Learning Outcome
+## Overall Learning Outcome
 
 This lab demonstrated how Whois services provide valuable domain registration intelligence during the footprinting phase of ethical hacking. By analyzing publicly available registration records, I learned how ethical hackers identify infrastructure details that contribute to building a comprehensive reconnaissance profile.
 
 ---
 
-## Lab 5 - Perform DNS Footprinting
+ Lab 5 - Perform DNS Footprinting
 
-### Objective
+## Objective
 
 To understand how DNS information can be gathered using the `nslookup` command-line utility and online DNS lookup services to identify domain records, IP address mappings, and authoritative name servers during the footprinting phase of a security assessment.
 
 ---
 
-### Background
+## Background
 
 The Domain Name System (DNS) translates human-readable domain names into IP addresses and maintains various resource records that describe domain infrastructure. Ethical hackers perform DNS footprinting to identify publicly available information such as IP addresses, canonical names (CNAME), mail servers, and authoritative name servers that support further reconnaissance activities.
 
@@ -493,16 +492,16 @@ This lab demonstrates how the `nslookup` utility and an online DNS lookup servic
 
 ---
 
-### Task 1 - Gather DNS Information using nslookup Command Line Utility and Online Tool
+## Task 1 - Gather DNS Information using nslookup Command Line Utility and Online Tool
 
-#### Tools Used
+### Tools Used
 
 - [nslookup](../../Tools/nslookup.md)
 - [NSLOOKUP Online Tool](../../Tools/NSLOOKUP-Online.md)
 
 ---
 
-#### Activity Performed
+### Activity Performed
 
 DNS footprinting was performed using the `nslookup` command-line utility to query resource records associated with the target domain. Different query types were used to resolve the domain's IPv4 address, identify the authoritative name server, and gather additional DNS information relevant to the target infrastructure.
 
@@ -510,7 +509,7 @@ The collected DNS information was then validated using an online NSLOOKUP servic
 
 ---
 
-#### Observations
+### Observations
 
 - DNS records associated with the target domain were successfully retrieved.
 - The target domain's IPv4 address was resolved.
@@ -520,7 +519,7 @@ The collected DNS information was then validated using an online NSLOOKUP servic
 
 ---
 
-#### A Record Lookup
+### A Record Lookup
 
 ![A Record Lookup](Images/Lab5-nslookup-A-Record.png)
 
@@ -528,7 +527,7 @@ The collected DNS information was then validated using an online NSLOOKUP servic
 
 ---
 
-#### Authoritative Name Server
+### Authoritative Name Server
 
 ![Authoritative Name Server](Images/Lab5-nslookup-CNAME-Authoritative-Server.png)
 
@@ -536,7 +535,7 @@ The collected DNS information was then validated using an online NSLOOKUP servic
 
 ---
 
-#### Online DNS Lookup
+### Online DNS Lookup
 
 ![Online NSLOOKUP Results](Images/Lab5-Online-NSLOOKUP-Results.png)
 
@@ -544,13 +543,13 @@ The collected DNS information was then validated using an online NSLOOKUP servic
 
 ---
 
-#### Learning Outcome
+### Learning Outcome
 
 This task demonstrated how DNS footprinting can be performed using both command-line and web-based tools to collect publicly available DNS information. I understood how resource records such as A records and authoritative name servers contribute to building an accurate reconnaissance profile of a target organization's infrastructure.
 
 ---
 
-#### Attack Flow
+### Attack Flow
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#D0E8FF', 'primaryTextColor': '#092B4B', 'primaryBorderColor': '#1C6DD0', 'lineColor': '#2A7EE0', 'secondaryColor': '#EBF5FF', 'tertiaryColor': '#BBDFFF'}}}%%
@@ -572,21 +571,21 @@ flowchart TD
 
 ---
 
-#### Overall Learning Outcome
+## Overall Learning Outcome
 
 This lab demonstrated how publicly available DNS records provide valuable intelligence during the footprinting phase of ethical hacking. By querying DNS information using command-line and online tools, I learned how ethical hackers identify domain infrastructure, authoritative name servers, and IP address mappings that support comprehensive reconnaissance activities.
 
 ---
 
-## Lab 6 - Perform Network Footprinting
+# Lab 6 - Perform Network Footprinting
 
-### Objective
+## Objective
 
 To understand how network tracerouting utilities can be used to identify the communication path between a source and destination host, enabling ethical hackers to analyze network topology and supporting infrastructure during reconnaissance.
 
 ---
 
-### Background
+## Background
 
 Network tracerouting is a reconnaissance technique used to identify the sequence of intermediate devices through which network packets travel before reaching a target system. By analyzing each hop, ethical hackers can gain valuable insights into network topology, routing paths, trusted routers, and other infrastructure components that may support further security assessments.
 
@@ -594,7 +593,7 @@ This lab demonstrates how tracerouting can be performed using both Windows (`tra
 
 ---
 
-### Task 1 - Perform Network Tracerouting in Windows and Linux Machines
+## Task 1 - Perform Network Tracerouting in Windows and Linux Machines
 
 #### Tools Used
 
@@ -603,7 +602,7 @@ This lab demonstrates how tracerouting can be performed using both Windows (`tra
 
 ---
 
-#### Activity Performed
+### Activity Performed
 
 Network tracerouting was performed using the Windows `tracert` utility and the Linux `traceroute` command to identify the path taken by network packets to reach the target domain. The returned hop information was analyzed to observe the intermediate network devices involved in the communication path.
 
@@ -611,7 +610,7 @@ The results demonstrated how tracerouting utilities reveal network routing paths
 
 ---
 
-#### Observations
+### Observations
 
 - Network hops between the source and destination were successfully identified.
 - Intermediate routing devices were displayed during the traceroute process.
@@ -621,7 +620,7 @@ The results demonstrated how tracerouting utilities reveal network routing paths
 
 ---
 
-#### Windows Traceroute
+### Windows Traceroute
 
 ![Windows Tracert](Images/Lab6-Windows-Tracert.png)
 
@@ -629,7 +628,7 @@ The results demonstrated how tracerouting utilities reveal network routing paths
 
 ---
 
-#### Linux Traceroute
+### Linux Traceroute
 
 ![Linux Traceroute](Images/Lab6-Linux-Traceroute.png)
 
@@ -637,13 +636,13 @@ The results demonstrated how tracerouting utilities reveal network routing paths
 
 ---
 
-#### Learning Outcome
+### Learning Outcome
 
 This task demonstrated how tracerouting utilities can be used to analyze communication paths and identify intermediate network devices during reconnaissance. I understood how routing information assists ethical hackers in mapping network infrastructure and planning subsequent security assessments.
 
 ---
 
-#### Attack Flow
+### Attack Flow
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#D0E8FF', 'primaryTextColor': '#092B4B', 'primaryBorderColor': '#1C6DD0', 'lineColor': '#2A7EE0', 'secondaryColor': '#EBF5FF', 'tertiaryColor': '#BBDFFF'}}}%%
@@ -663,21 +662,21 @@ flowchart TD
     class F endNode;
 ```
 
-#### Overall Learning Outcome
+## Overall Learning Outcome
 
 This lab demonstrated how tracerouting utilities reveal network routing paths and intermediate infrastructure during the footprinting phase of ethical hacking. By analyzing network hops from both Windows and Linux environments, I learned how ethical hackers gather valuable network topology information that supports comprehensive reconnaissance.
 
 ---
 
-## Lab 7 - Perform Email Footprinting
+# Lab 7 - Perform Email Footprinting
 
-### Objective
+## Objective
 
 To understand how email header analysis can be used to gather information about a target by tracing the routing path of an email and identifying sender infrastructure using eMailTrackerPro.
 
 ---
 
-### Background
+## Background
 
 Email headers contain valuable metadata about the origin, routing path, mail servers, and delivery process of an email. Ethical hackers analyze email headers to identify sender information, trace the path taken by an email across multiple mail servers, and gather intelligence about the infrastructure supporting email communications.
 
@@ -685,15 +684,15 @@ This lab demonstrates how eMailTrackerPro can analyze email headers to visualize
 
 ---
 
-### Task 1 - Gather Information about a Target by Tracing Emails using eMailTrackerPro
+## Task 1 - Gather Information about a Target by Tracing Emails using eMailTrackerPro
 
-#### Tools Used
+### Tools Used
 
 - [eMailTrackerPro](../../Tools/eMailTrackerPro.md)
 
 ---
 
-#### Activity Performed
+### Activity Performed
 
 Email footprinting was performed by importing an email header into eMailTrackerPro for analysis. The application processed the header information to reconstruct the routing path taken by the email and identify the intermediate mail servers involved during message delivery.
 
@@ -701,7 +700,7 @@ The traced route, geographical information, email summary, and Network Whois rec
 
 ---
 
-#### Observations
+### Observations
 
 - Email routing information was successfully reconstructed from the email header.
 - Intermediate mail servers involved in message delivery were identified.
@@ -711,7 +710,7 @@ The traced route, geographical information, email summary, and Network Whois rec
 
 ---
 
-#### Email Trace Results
+### Email Trace Results
 
 ![Email Trace Results](Images/Lab7-eMailTrackerPro-Trace-Results.png)
 
@@ -719,7 +718,7 @@ The traced route, geographical information, email summary, and Network Whois rec
 
 ---
 
-#### Network Whois Information
+### Network Whois Information
 
 ![Network Whois](Images/Lab7-eMailTrackerPro-Network-Whois.png)
 
@@ -727,13 +726,13 @@ The traced route, geographical information, email summary, and Network Whois rec
 
 ---
 
-#### Learning Outcome
+### Learning Outcome
 
 This task demonstrated how email headers can be analyzed to identify sender infrastructure, trace email routing paths, and gather publicly available intelligence about email communications. I understood how eMailTrackerPro assists ethical hackers in performing email footprinting and supports security investigations through metadata analysis.
 
 ---
 
-#### Attack Flow
+### Attack Flow
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#D0E8FF', 'primaryTextColor': '#092B4B', 'primaryBorderColor': '#1C6DD0', 'lineColor': '#2A7EE0', 'secondaryColor': '#EBF5FF', 'tertiaryColor': '#BBDFFF'}}}%%
@@ -755,21 +754,21 @@ flowchart TD
 
 ---
 
-#### Overall Learning Outcome
+## Overall Learning Outcome
 
 This lab demonstrated how email headers provide valuable intelligence during the footprinting phase of ethical hacking. By analyzing routing information, mail servers, and Network Whois records, I learned how ethical hackers trace email communications and gather infrastructure details that support comprehensive reconnaissance and security investigations.
 
 ---
 
-## Lab 8 - Perform Footprinting using Various Footprinting Tools
+# Lab 8 - Perform Footprinting using Various Footprinting Tools
 
-### Objective
+## Objective
 
 To understand how Recon-ng can be used to automate reconnaissance by collecting host information, gathering publicly available contact details, and generating reconnaissance reports during the footprinting phase of a security assessment.
 
 ---
 
-### Background
+## Background
 
 Recon-ng is an Open Source Intelligence (OSINT) framework designed to automate web-based reconnaissance through a collection of independent modules. It integrates data gathering, workspace management, and reporting capabilities into a single environment, enabling ethical hackers to efficiently collect information from multiple public sources.
 
@@ -777,15 +776,15 @@ This lab demonstrates how Recon-ng modules can be used to enumerate hosts, gathe
 
 ---
 
-### Task 1 - Footprinting a Target using Recon-ng
+## Task 1 - Footprinting a Target using Recon-ng
 
-#### Tools Used
+### Tools Used
 
 - [Recon-ng](../../Tools/Recon-ng.md)
 
 ---
 
-#### Activity Performed
+### Activity Performed
 
 Recon-ng was used to perform automated reconnaissance against the target domain by leveraging multiple reconnaissance modules. The framework collected publicly available host information, gathered contact details associated with the target organization, and generated a structured HTML report summarizing the reconnaissance findings.
 
@@ -793,7 +792,7 @@ The collected intelligence was analyzed to understand how automated reconnaissan
 
 ---
 
-#### Observations
+### Observations
 
 - Recon-ng successfully automated multiple reconnaissance tasks.
 - Publicly available host information associated with the target domain was identified.
@@ -803,7 +802,7 @@ The collected intelligence was analyzed to understand how automated reconnaissan
 
 ---
 
-#### Host Discovery Results
+### Host Discovery Results
 
 ![Host Discovery Results](Images/Lab8-Recon-ng-Hosts.png)
 
@@ -811,7 +810,7 @@ The collected intelligence was analyzed to understand how automated reconnaissan
 
 ---
 
-#### Contact Enumeration
+### Contact Enumeration
 
 ![Contact Enumeration](Images/Lab8-Recon-ng-Contacts.png)
 
@@ -819,7 +818,7 @@ The collected intelligence was analyzed to understand how automated reconnaissan
 
 ---
 
-#### HTML Reconnaissance Report
+### HTML Reconnaissance Report
 
 ![HTML Reconnaissance Report](Images/Lab8-Recon-ng-Report.png)
 
@@ -827,13 +826,13 @@ The collected intelligence was analyzed to understand how automated reconnaissan
 
 ---
 
-#### Learning Outcome
+### Learning Outcome
 
 This task demonstrated how automated reconnaissance frameworks streamline the footprinting process by consolidating multiple information-gathering techniques into a single platform. I understood how Recon-ng assists ethical hackers in collecting, organizing, and reporting publicly available intelligence during security assessments.
 
 ---
 
-#### Attack Flow
+### Attack Flow
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#D0E8FF', 'primaryTextColor': '#092B4B', 'primaryBorderColor': '#1C6DD0', 'lineColor': '#2A7EE0', 'secondaryColor': '#EBF5FF', 'tertiaryColor': '#BBDFFF'}}}%%
@@ -855,21 +854,21 @@ flowchart TD
 
 ---
 
-#### Overall Learning Outcome
+## Overall Learning Outcome
 
 This lab demonstrated how Recon-ng automates Open Source Intelligence gathering by integrating host enumeration, personnel information collection, and reporting into a unified reconnaissance framework. I learned how automated reconnaissance tools improve the efficiency and organization of footprinting activities while supporting comprehensive security assessments.
 
 ---
 
-## Lab 9 - Perform Footprinting using AI
+# Lab 9 - Perform Footprinting using AI
 
-### Objective
+## Objective
 
 To understand how ShellGPT can assist ethical hackers by generating and executing reconnaissance commands, automating footprinting tasks, and improving the efficiency of Open Source Intelligence (OSINT) gathering.
 
 ---
 
-### Background
+## Background
 
 Artificial Intelligence is increasingly being integrated into cybersecurity workflows to automate repetitive tasks and simplify complex command-line operations. ShellGPT combines natural language processing with shell command generation, enabling security professionals to describe reconnaissance objectives in plain language and receive executable commands for various security tools.
 
@@ -877,15 +876,15 @@ This lab demonstrates how ShellGPT can automate multiple footprinting activities
 
 ---
 
-### Task 1 - Footprinting a Target using ShellGPT
+## Task 1 - Footprinting a Target using ShellGPT
 
-#### Tools Used
+### Tools Used
 
 - [ShellGPT](../../Tools/ShellGPT.md)
 
 ---
 
-#### Activity Performed
+### Activity Performed
 
 ShellGPT was used to automate multiple footprinting activities through natural language prompts. AI-generated commands were executed to perform email harvesting, social media reconnaissance, DNS enumeration, network tracerouting, and automated reconnaissance scripting using industry-standard security tools.
 
@@ -893,7 +892,7 @@ The generated outputs were analyzed to understand how AI can reduce manual effor
 
 ---
 
-#### Observations
+### Observations
 
 - ShellGPT successfully generated security commands from natural language prompts.
 - AI-assisted email harvesting identified publicly available email addresses and hosts.
@@ -904,7 +903,7 @@ The generated outputs were analyzed to understand how AI can reduce manual effor
 
 ---
 
-#### AI-Assisted Email Harvesting
+### AI-Assisted Email Harvesting
 
 ![ShellGPT Email Harvesting](Images/Lab9-ShellGPT-Email-Harvesting.png)
 
@@ -912,7 +911,7 @@ The generated outputs were analyzed to understand how AI can reduce manual effor
 
 ---
 
-#### AI-Assisted Social Media Reconnaissance
+### AI-Assisted Social Media Reconnaissance
 
 ![ShellGPT Sherlock Reconnaissance](Images/Lab9-ShellGPT-Sherlock-Reconnaissance.png)
 
@@ -920,7 +919,7 @@ The generated outputs were analyzed to understand how AI can reduce manual effor
 
 ---
 
-#### AI-Assisted Footprinting Automation
+### AI-Assisted Footprinting Automation
 
 ![ShellGPT Footprinting Automation](Images/Lab9-ShellGPT-Footprinting-Automation.png)
 
@@ -928,13 +927,13 @@ The generated outputs were analyzed to understand how AI can reduce manual effor
 
 ---
 
-#### Learning Outcome
+### Learning Outcome
 
 This task demonstrated how Artificial Intelligence can enhance the footprinting process by generating security commands, automating reconnaissance tasks, and simplifying complex workflows. I understood how ShellGPT complements traditional security tools by improving productivity while still requiring ethical hackers to validate generated commands and analyze the results.
 
 ---
 
-#### Attack Flow
+### Attack Flow
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#D0E8FF', 'primaryTextColor': '#092B4B', 'primaryBorderColor': '#1C6DD0', 'lineColor': '#2A7EE0', 'secondaryColor': '#EBF5FF', 'tertiaryColor': '#BBDFFF'}}}%%
@@ -956,7 +955,7 @@ flowchart TD
 
 ---
 
-#### Overall Learning Outcome
+## Overall Learning Outcome
 
 This lab demonstrated how AI-powered assistants can improve the efficiency of footprinting by automating command generation and reconnaissance workflows. I learned that ShellGPT enhances traditional Open Source Intelligence techniques by simplifying interactions with multiple security tools while emphasizing the importance of human expertise to validate results and make informed security decisions.
 
