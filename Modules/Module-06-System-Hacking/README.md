@@ -431,3 +431,312 @@ flowchart TD
 ```
 
 ---
+
+## Overall Learning Outcome
+
+This lab demonstrated multiple techniques used to gain initial access to target systems through credential interception, reverse shell deployment, and memory corruption exploitation. It provided practical experience in capturing and cracking authentication credentials, establishing remote access using automated reverse shell payloads, and developing a complete buffer overflow exploit to achieve remote code execution. Overall, the lab reinforced the importance of secure authentication mechanisms, robust memory protection techniques, secure software development practices, and continuous monitoring to defend against common system hacking attacks.
+
+---
+
+# Lab 2: Perform Privilege Escalation to Gain Higher Privileges
+
+## Objective
+
+To obtain higher privileges on a compromised Windows system by bypassing User Account Control (UAC) mechanisms and exploiting built-in accessibility features to gain persistent SYSTEM-level access.
+
+---
+
+## Background
+
+Privilege escalation is the second phase of system hacking, performed after successfully gaining initial access to a target system. Attackers attempt to elevate their privileges from a standard user account to administrative or SYSTEM-level access in order to execute privileged operations, disable security controls, access restricted resources, and establish long-term persistence.
+
+Windows provides several security mechanisms, such as User Account Control (UAC), to restrict unauthorized privilege elevation. However, attackers can exploit operating system misconfigurations, trusted applications, registry-based bypass techniques, and built-in accessibility features to circumvent these protections. Once elevated privileges are obtained, persistence mechanisms can be implemented to retain privileged access even after system reboots or user logouts.
+
+This lab demonstrates privilege escalation through a UAC bypass using the FodHelper Registry Key technique and persistence through exploitation of the Sticky Keys accessibility feature, illustrating how attackers can obtain and maintain SYSTEM-level access on Windows systems.
+
+---
+
+## Task 1: Escalate Privileges by Bypassing UAC and Exploiting Sticky Keys
+
+### Tools Used
+
+- [Metasploit](../../Tools/Metasploit.md)
+
+---
+
+### Activity Performed
+
+A privilege escalation attack was performed by bypassing Windows User Account Control (UAC) and exploiting the Sticky Keys accessibility feature to obtain persistent SYSTEM-level access to the target machine. Initially, an MSFVenom Meterpreter payload was generated and delivered to the target system, establishing a Meterpreter session with the compromised host.
+
+After verifying the active session, a Metasploit local privilege escalation module exploiting the FodHelper Registry Key was executed to bypass UAC restrictions without prompting the user for administrative approval. Once the bypass succeeded, the Meterpreter session was elevated to the **NT AUTHORITY\SYSTEM** account, granting unrestricted administrative privileges on the target system.
+
+To demonstrate persistence, the Sticky Keys accessibility feature was replaced using the Metasploit Sticky Keys post-exploitation module. After locking the target system, pressing the **Shift** key five times launched a command prompt instead of the normal Sticky Keys dialog, providing SYSTEM-level command execution directly from the Windows logon screen without requiring user authentication.
+
+This task demonstrated how privilege escalation combined with persistence techniques enables attackers to maintain privileged access even after the initial compromise.
+
+---
+
+### Observations
+
+- Successfully generated and deployed a Meterpreter payload.
+- Established a Meterpreter session with the target Windows system.
+- Bypassed Windows User Account Control (UAC) using the FodHelper Registry Key technique.
+- Successfully elevated privileges to the **NT AUTHORITY\SYSTEM** account.
+- Configured the Sticky Keys accessibility feature to obtain persistent SYSTEM-level access.
+- Verified SYSTEM privileges from the Windows logon screen without authenticating to the operating system.
+
+---
+
+### MSFVenom Payload Generated
+
+![MSFVenom Payload](Images/Lab2-MSFVenom-Payload-Generated.png)
+
+**Figure 2.1:** MSFVenom successfully generated a Windows Meterpreter reverse TCP payload, which was later executed on the target system to establish an initial Meterpreter session.
+
+---
+
+### Meterpreter Session Established
+
+![Meterpreter Session](Images/Lab2-Meterpreter-Session-Established.png)
+
+**Figure 2.2:** Execution of the generated payload established a Meterpreter session with the target Windows system, allowing reconnaissance commands such as `sysinfo` to verify the compromised host.
+
+---
+
+### UAC Bypass and SYSTEM Privileges
+
+![UAC Bypass](Images/Lab2-UAC-Bypass-Success.png)
+
+**Figure 2.3:** The Metasploit FodHelper UAC bypass module successfully elevated the Meterpreter session to **NT AUTHORITY\SYSTEM**, providing unrestricted administrative privileges on the compromised system.
+
+---
+
+### Sticky Keys Persistence
+
+![Sticky Keys Persistence](Images/Lab2-Sticky-Keys-Persistence.png)
+
+**Figure 2.4:** Exploiting the Sticky Keys accessibility feature opened a command prompt at the Windows logon screen with SYSTEM privileges, demonstrating how persistence can be maintained without user authentication.
+
+---
+
+### Learning Outcome
+
+This task demonstrated how attackers can escalate privileges by bypassing Windows User Account Control and maintain persistent SYSTEM-level access by abusing built-in accessibility features. It reinforced the importance of protecting privileged accounts, restricting unauthorized modifications to operating system components, and monitoring post-exploitation activities that may establish long-term persistence.
+
+---
+
+### Attack Flow
+
+```mermaid
+flowchart TD
+
+    A[Generate Meterpreter Payload]
+    --> B[Execute Payload on Target]
+    --> C[Establish Meterpreter Session]
+    --> D[Bypass UAC]
+    --> E[Escalate to SYSTEM]
+    --> F[Exploit Sticky Keys]
+    --> G[Persistent SYSTEM Access]
+
+    classDef start fill:#1f2937,color:#fff,stroke:#2563eb
+    classDef process fill:#374151,color:#fff,stroke:#2563eb
+    classDef success fill:#059669,color:#fff,stroke:#10b981
+
+    class A start
+    class B,C,D,E,F process
+    class G success
+```
+
+---
+
+## Overall Learning Outcome
+
+This lab demonstrated how attackers can escalate privileges on a compromised Windows system by bypassing User Account Control (UAC) and exploiting built-in accessibility features to obtain persistent SYSTEM-level access. It provided practical experience in elevating privileges using the FodHelper Registry Key technique and maintaining privileged access through the Sticky Keys mechanism. Overall, the lab reinforced the importance of protecting privileged accounts, securing operating system components, monitoring persistence mechanisms, and implementing defense-in-depth strategies to detect and prevent unauthorized privilege escalation.
+
+---
+
+# Lab 3: Maintain Remote Access and Hide Malicious Activities
+
+## Objective
+
+To maintain persistent access to a compromised system and monitor user activities using authorized surveillance software, demonstrating how attackers can observe victim behavior while remaining active on the target machine.
+
+---
+
+## Background
+
+After obtaining administrative or SYSTEM-level privileges, attackers often establish persistence and deploy monitoring mechanisms to retain long-term access to compromised systems. These techniques enable continuous observation of user activities, collection of sensitive information, and maintenance of control even after the initial compromise has occurred.
+
+System monitoring software and spyware can record keystrokes, capture screenshots, track application usage, monitor visited websites, and log file operations without the user's knowledge. Although these capabilities are intended for legitimate administrative and parental control purposes, attackers may misuse them to gather sensitive information and maintain surveillance over compromised systems.
+
+This lab demonstrates how monitoring software can be deployed on a target Windows system to collect user activity data and transmit it to a centralized dashboard. It highlights the risks associated with unauthorized surveillance while emphasizing the importance of endpoint protection, application control, and continuous monitoring to detect persistence mechanisms and spyware.
+
+---
+
+## Task 1: User System Monitoring and Surveillance
+
+### Tools Used
+
+- [Refog Personal Monitor](../../Tools/Refog-Personal-Monitor.md)
+
+---
+
+### Activity Performed
+
+Refog Personal Monitor was deployed on the target Windows system to demonstrate user activity monitoring and surveillance. After establishing remote desktop access to the target machine, the monitoring agent was installed, linked to an online Refog account, and configured to record user activities.
+
+Once deployed, the target system was restarted and used as a legitimate user to perform common activities such as web browsing and application usage. These activities were automatically synchronized with the online Refog dashboard, allowing real-time monitoring of the compromised system.
+
+The dashboard successfully displayed information including visited websites, application usage, and overall computer activity, demonstrating how surveillance software can collect and centralize user activity without requiring continued physical access to the target machine.
+
+This task highlighted how attackers can maintain visibility into a compromised system through monitoring software while reinforcing the importance of detecting unauthorized surveillance tools and persistence mechanisms.
+
+---
+
+### Observations
+
+- Successfully deployed Refog Personal Monitor on the target system.
+- Linked the monitoring agent to an online dashboard.
+- Established persistent monitoring of the compromised machine.
+- Captured user browsing activity through the Refog dashboard.
+- Successfully monitored user activity remotely.
+- Demonstrated how surveillance software can maintain visibility into a compromised system.
+
+---
+
+### Refog Dashboard Connected
+
+![Refog Dashboard](Images/Lab3-Refog-Online-Dashboard.png)
+
+**Figure 3.1:** The target Windows system successfully synchronized with the Refog online dashboard, confirming that the monitoring agent had been deployed and was actively communicating with the management portal.
+
+---
+
+### User Activity Monitoring
+
+![User Activity Monitoring](Images/Lab3-Refog-User-Activity-Monitoring.png)
+
+**Figure 3.2:** The Refog dashboard displayed the victim's recorded web activity, demonstrating successful collection and remote monitoring of user behavior through the deployed surveillance software.
+
+---
+
+### Learning Outcome
+
+This task demonstrated how monitoring software can be deployed to maintain visibility into a compromised system by recording user activities and transmitting them to a centralized dashboard. It reinforced the importance of endpoint protection, application control, continuous monitoring, and detecting unauthorized surveillance software to prevent long-term compromise.
+
+---
+
+### Attack Flow
+
+```mermaid
+flowchart TD
+
+    A[Deploy Monitoring Agent]
+    --> B[Install on Target System]
+    --> C[Link to Online Dashboard]
+    --> D[Monitor User Activity]
+    --> E[Collect Activity Data]
+    --> F[Review Activity Remotely]
+
+    classDef start fill:#1f2937,color:#fff,stroke:#2563eb
+    classDef process fill:#374151,color:#fff,stroke:#2563eb
+    classDef success fill:#059669,color:#fff,stroke:#10b981
+
+    class A start
+    class B,C,D,E process
+    class F success
+```
+
+---
+
+## Task 2: Maintain Persistence by Modifying Registry Run Keys
+
+### Tools Used
+
+- [Metasploit](../../Tools/Metasploit.md)
+- [Registry Editor](../../Tools/Registry-Editor.md)
+
+---
+
+### Activity Performed
+
+A Windows persistence mechanism was established by creating a malicious entry within the **Run** registry key. Initially, two Meterpreter payloads were generated using MSFVenom: one to obtain an initial Meterpreter session and another to serve as the persistent payload executed during system startup.
+
+After gaining access to the target system, Windows User Account Control (UAC) was bypassed using the **SilentCleanup** privilege escalation technique available in Metasploit. Once elevated to **NT AUTHORITY\SYSTEM**, a command shell was opened and a new registry value was created under the **HKLM\Software\Microsoft\Windows\CurrentVersion\Run** key, referencing the malicious payload stored on the target system.
+
+A second Meterpreter listener was configured to receive incoming connections from the persistence payload. After restarting the Windows system, the operating system automatically executed the payload configured within the Run registry key, establishing a new Meterpreter session without requiring additional exploitation.
+
+This task demonstrated how attackers can leverage Windows startup registry keys to maintain persistent remote access across system reboots while automatically reconnecting to attacker-controlled infrastructure whenever an authorized user logs into the system.
+
+---
+
+### Observations
+
+- Successfully generated Meterpreter persistence payloads using MSFVenom.
+- Established an initial Meterpreter session with the target system.
+- Bypassed User Account Control (UAC) using the SilentCleanup technique.
+- Elevated privileges to **NT AUTHORITY\SYSTEM**.
+- Successfully created a malicious Run registry key entry.
+- Verified automatic execution of the persistence payload after system restart.
+- Successfully re-established a Meterpreter session through the configured Run registry key.
+
+---
+
+### Registry Persistence Payload Generated
+
+![Registry Payload](Images/Lab3-Registry-Payload-Generated.png)
+
+**Figure 3.3:** MSFVenom successfully generated the executable payload that was later configured within the Windows Run registry key to establish persistence.
+
+---
+
+### Run Registry Key Modified
+
+![Registry Run Key](Images/Lab3-Run-Registry-Modified.png)
+
+**Figure 3.4:** A new value was successfully added to the Windows Run registry key, configuring the operating system to automatically execute the malicious payload during user logon.
+
+---
+
+### Persistent Meterpreter Session Established
+
+![Persistent Session](Images/Lab3-Persistent-Meterpreter-Session.png)
+
+**Figure 3.5:** After restarting the target system, the payload configured within the Run registry key executed automatically and established a new Meterpreter session, demonstrating successful persistence.
+
+---
+
+### Learning Outcome
+
+This task demonstrated how Windows startup registry keys can be abused to maintain persistent remote access after the initial compromise. It reinforced the importance of monitoring registry modifications, restricting unauthorized privilege escalation, implementing endpoint protection, and auditing startup locations commonly targeted by attackers.
+
+---
+
+### Attack Flow
+
+```mermaid
+flowchart TD
+
+    A[Generate Persistence Payload]
+    --> B[Gain Initial Access]
+    --> C[Bypass UAC]
+    --> D[Obtain SYSTEM Privileges]
+    --> E[Modify Run Registry Key]
+    --> F[Restart Target System]
+    --> G[Automatic Payload Execution]
+    --> H[Re-establish Meterpreter Session]
+
+    classDef start fill:#1f2937,color:#fff,stroke:#2563eb
+    classDef process fill:#374151,color:#fff,stroke:#2563eb
+    classDef success fill:#059669,color:#fff,stroke:#10b981
+
+    class A start
+    class B,C,D,E,F,G process
+    class H success
+```
+
+---
+
+## Overall Learning Outcome
+
+This lab demonstrated multiple techniques used to maintain long-term access to compromised Windows systems through user activity monitoring and persistence mechanisms. It provided practical experience in deploying surveillance software to observe user behavior remotely and configuring Windows Run registry keys to automatically execute malicious payloads after system startup. Overall, the lab reinforced the importance of monitoring persistence mechanisms, protecting registry startup locations, detecting unauthorized monitoring software, and implementing endpoint security controls to prevent long-term compromise.
