@@ -161,6 +161,7 @@
  - Module 02 – Footprinting and Reconnaissance
  - Module 03 – Scanning Networks
  - Module 04 – Enumeration
+ - Module 06 – System Hacking
  - Module 14 – Web Application Hacking
  - Module 15 – SQL Injection
 

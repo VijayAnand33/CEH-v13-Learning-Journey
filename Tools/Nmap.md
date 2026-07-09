@@ -105,6 +105,10 @@ flowchart TD
 
 ## CEH Practical Example
 
+In **Module 02 – Footprinting and Reconnaissance**, Nmap was used to discover live hosts, perform TCP and UDP port scanning, identify running services, detect operating systems, and enumerate network information during the reconnaissance phase.
+
+In **Module 06 – System Hacking**, Nmap was used to scan the target subnet, identify the Active Directory Domain Controller by detecting Kerberos (TCP 88) and LDAP (TCP 389) services, and perform detailed service enumeration to discover the Active Directory domain name (**CEH.com**). The collected information served as the foundation for subsequent Active Directory attacks.
+
 During **Module 14 – Web Application Hacking**, Nmap was used during the reconnaissance phase to identify open ports, detect running services, gather service version information, and understand the target web server before beginning vulnerability assessment and exploitation.
 
 Example:
@@ -157,6 +161,7 @@ The aggressive scan provided information such as:
 
 - Module 03 – Scanning Networks
 - Module 04 – Enumeration
+- Module 06 – System Hacking
 - Module 14 – Web Application Hacking
 
 ---
