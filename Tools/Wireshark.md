@@ -123,6 +123,7 @@ During **Module 16 – Hacking Wireless Networks**, Wireshark was used to analyz
 ## Used In
 
 - Module 03 – Scanning Networks
+- Module 08 – Sniffing
 - Module 16 – Hacking Wireless Networks
 
 ---

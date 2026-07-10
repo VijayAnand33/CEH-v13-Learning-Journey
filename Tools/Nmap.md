@@ -162,6 +162,7 @@ The aggressive scan provided information such as:
 - Module 03 – Scanning Networks
 - Module 04 – Enumeration
 - Module 06 – System Hacking
+- Module 08 – Sniffing
 - Module 14 – Web Application Hacking
 
 ---
