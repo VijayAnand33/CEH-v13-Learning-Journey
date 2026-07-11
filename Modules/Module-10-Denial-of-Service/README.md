@@ -6,7 +6,7 @@
 >
 > **Labs Completed:** 2
 >
-> **Tools Covered:** Hping3, Low Orbit Ion Cannon (LOIC), ISB, UltraDDOS-v2, Anti DDoS Guardian
+> **Tools Covered:** Hping3, ISB, UltraDDOS-v2, Low Orbit Ion Cannon (LOIC), Metasploit, Eagle-DDoS, Wireshark, Resource Monitor, System Monitor, Anti DDoS Guardian
 
 ---
 
@@ -54,7 +54,16 @@ After completing this module, you will be able to:
 
 # Tools Used
 
-*(To be completed after documenting all labs.)*
+- [Hping3](../../Tools/Hping3.md)
+- [ISB](../../Tools/ISB.md)
+- [UltraDDOS-v2](../../Tools/UltraDDOS-v2.md)
+- [Low Orbit Ion Cannon (LOIC)](../../Tools/Low-Orbit-Ion-Cannon-LOIC.md)
+- [Metasploit](../../Tools/Metasploit.md)
+- [Eagle-DDoS](../../Tools/Eagle-DDoS.md)
+- [Wireshark](../../Tools/Wireshark.md)
+- [Resource Monitor](../../Tools/Resource-Monitor.md)
+- [System Monitor](../../Tools/System-Monitor.md)
+- [Anti DDoS Guardian](../../Tools/Anti-DDoS-Guardian.md)
 
 ---
 
