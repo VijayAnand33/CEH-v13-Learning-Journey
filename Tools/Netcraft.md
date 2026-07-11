@@ -101,6 +101,8 @@ style F fill:#238636,color:#fff,stroke:#2ea043
 
 In **Module 02 – Footprinting and Reconnaissance**, Netcraft was used to generate a Site Report for the target domain. The report revealed information about the target's infrastructure, hosting environment, technologies used, network details, and publicly available subdomains. This information provided valuable intelligence for subsequent reconnaissance activities.
 
+During **Module 09 – Social Engineering**, Netcraft was used to analyze the security reputation of legitimate websites and detect phishing pages. The browser extension displayed detailed information such as website reputation, hosting details, and SSL/TLS information, while automatically warning users when attempting to access a known phishing website. This demonstrated how browser-based reputation services help identify and prevent phishing attacks before sensitive information is disclosed.
+
 ---
 
 ## Advantages
@@ -136,6 +138,7 @@ In **Module 02 – Footprinting and Reconnaissance**, Netcraft was used to gener
 ## Used In
 
 - Module 02 – Footprinting and Reconnaissance
+- Module 09 – Social Engineering
 
 ---
 
