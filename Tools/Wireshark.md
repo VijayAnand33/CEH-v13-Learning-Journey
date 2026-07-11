@@ -86,6 +86,8 @@ graph TD
 
 ## CEH Practical Example
 
+During **Module 11 – Session Hijacking**, Wireshark was used to capture and analyze network traffic while Bettercap performed network reconnaissance and packet sniffing. By observing a large number of ARP packets generated during the attack, Wireshark helped identify abnormal network activity associated with an attempted session hijacking attack and demonstrated how packet analysis can be used to detect network-level interception techniques.
+
 During **Module 16 – Hacking Wireless Networks**, Wireshark was used to analyze a provided IEEE 802.11 wireless packet capture (`WPA2crack-01.cap`). The analysis demonstrated how wireless packets can be inspected to identify wireless communication protocols and understand wireless network activity before performing security assessments.
 
 ---
@@ -125,6 +127,7 @@ During **Module 16 – Hacking Wireless Networks**, Wireshark was used to analyz
 - Module 03 – Scanning Networks
 - Module 08 – Sniffing
 - Module 10 – Denial-of-Service
+- Module 11 – Session Hijacking
 - Module 16 – Hacking Wireless Networks
 
 ---
