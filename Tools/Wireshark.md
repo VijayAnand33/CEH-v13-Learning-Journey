@@ -129,6 +129,7 @@ During **Module 16 – Hacking Wireless Networks**, Wireshark was used to analyz
 - Module 10 – Denial-of-Service
 - Module 11 – Session Hijacking
 - Module 16 – Hacking Wireless Networks
+- Module 18 – IoT and OT Hacking
 
 ---
 
