@@ -65,6 +65,16 @@ CEH-v13-Complete-Guide/
 
 ---
 
+# 📁 Repository Navigation
+
+- 📖 [Modules](Modules/)
+- 🛠 [Tools](Tools/)
+- 📚 [Cheat Sheets](Cheat-Sheets/)
+- 📂 [Resources](Resources/)
+- 🗺 [Roadmap](ROADMAP.md)
+
+---
+
 # 📖 Module Navigation
 
 | Module | Topic |
@@ -92,37 +102,28 @@ CEH-v13-Complete-Guide/
 
 ---
 
-# 🛠 Tools Covered
+# 🛠 Tool Documentation
 
-Throughout this repository, the following cybersecurity tools and platforms are documented and demonstrated:
+This repository includes **90+ documented cybersecurity tools** used throughout the **CEH v13** curriculum. Each tool includes an overview, purpose, features, practical usage, workflow, advantages, limitations, references, and the module(s) in which it is used.
 
-- Nmap
-- Wireshark
-- Metasploit Framework
-- Burp Suite
-- SQLMap
-- OWASP ZAP
-- OpenVAS
-- Nikto
-- Hydra
-- John the Ripper
-- Hashcat
-- Netcat
-- Maltego
-- Shodan
-- Censys
-- Social-Engineer Toolkit (SET)
-- Yersinia
-- Detect It Easy (DIE)
-- IDA
-- OllyDbg
-- TCPView
-- CurrPorts
-- Process Monitor
-- ShellGPT
-- CyberChef
-- VeraCrypt
-- CryptoForge
+| Category | Description |
+|----------|-------------|
+| 🌐 Reconnaissance & OSINT | Information gathering and open-source intelligence |
+| 🔍 Scanning & Enumeration | Host discovery, service enumeration, and network mapping |
+| 🛡 Vulnerability Assessment | Vulnerability scanning and security assessment |
+| 🌍 Web Application Security | Web application testing and exploitation |
+| 💻 System Hacking | Exploitation, privilege escalation, persistence, and post-exploitation |
+| 🔑 Password Attacks | Password auditing and credential attacks |
+| 🦠 Malware Analysis & Reverse Engineering | Malware creation, analysis, debugging, and reverse engineering |
+| 📡 Network Analysis | Packet capture, sniffing, and traffic monitoring |
+| 📶 Wireless Security | Wireless auditing and Wi-Fi security |
+| 📱 Mobile Security | Android and mobile penetration testing |
+| ☁ Cloud & Infrastructure | Cloud administration and infrastructure utilities |
+| 🔐 Cryptography | Encryption, hashing, and cryptographic utilities |
+| 🤖 AI-Assisted Security | AI-powered cybersecurity assistants |
+| ⚙ System & Administrative Utilities | Windows/Linux administration and forensic utilities |
+
+📁 **Browse the complete tool documentation:** **[Tool Documentation](Tools/README.md)**
 
 ---
 
