@@ -111,4 +111,4 @@ In **Module 07 – Malware Threats**, Hybrid Analysis was used to upload a suspi
 
 ## References
 
-- https://www.hybrid-analysis.coms
+- https://www.hybrid-analysis.com

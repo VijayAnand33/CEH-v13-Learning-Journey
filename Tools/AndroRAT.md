@@ -44,9 +44,3 @@ Users should install applications only from trusted sources, verify application 
 - Module 17 – Hacking Mobile Platforms
 
 ---
-
-## Official Resources
-
-- https://github.com/karma9874/AndroRAT
-
----

@@ -102,6 +102,3 @@ In **Module 07 – Malware Threats**, njRAT was used to create a Remote Access T
 
 - Module 07 – Malware Threats
 
-## References
-
-- https://github.com/imloading1337/njRAT

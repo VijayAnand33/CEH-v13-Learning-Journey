@@ -104,4 +104,4 @@ In **Module 07 – Malware Threats**, OllyDbg was used to load a suspicious exec
 
 ## References
 
-- http://www.ollydbg.des
+- http://www.ollydbg.de

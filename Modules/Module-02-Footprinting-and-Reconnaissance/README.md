@@ -77,8 +77,8 @@ After completing this module, I was able to:
 - [Sherlock](../../Tools/Sherlock.md)
 - [DomainTools](../../Tools/DomainTools.md)
 - [nslookup](../../Tools/nslookup.md)
-- [tracert](../../Tools/traceroute.md)
-- [traceroute](../../Tools/traceroute.md)
+- [tracert](../../Tools/Traceroute.md)
+- [traceroute](../../Tools/Traceroute.md)
 - [eMailTrackerPro](../../Tools/eMailTrackerPro.md)
 - [Recon-ng](../../Tools/Recon-ng.md)
 - [ShellGPT](../../Tools/ShellGPT.md)
@@ -262,14 +262,6 @@ DNSDumpster was then used to enumerate DNS records, identify mail servers, host 
 ![DNSDumpster GeoIP](Images/Lab2-DNSDumpster-GEOIP.png)
 
 *Figure 2.3 – DNSDumpster displaying the geographical locations of publicly accessible hosts.*
-
----
-
-### DNS Infrastructure
-
-![DNS Records](Images/Lab2-DNSDumpster-DNS-Records.png)
-
-*Figure 2.4 – DNSDumpster enumerating DNS servers, mail servers, and host records associated with the target domain.*
 
 ---
 
@@ -490,7 +482,7 @@ This lab demonstrated how Whois services provide valuable domain registration in
 
 ---
 
- Lab 5 - Perform DNS Footprinting
+ # Lab 5 - Perform DNS Footprinting
 
 ## Objective
 
@@ -511,7 +503,6 @@ This lab demonstrates how the `nslookup` utility and an online DNS lookup servic
 ### Tools Used
 
 - [nslookup](../../Tools/nslookup.md)
-- [NSLOOKUP Online Tool](../../Tools/NSLOOKUP-Online.md)
 
 ---
 

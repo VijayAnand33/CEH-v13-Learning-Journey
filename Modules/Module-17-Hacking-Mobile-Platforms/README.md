@@ -59,7 +59,6 @@ After completing this module, I was able to:
 
 # Tools Used
 
-- [ADB](../../Tools/ADB.md)
 - [PhoneSploit-Pro](../../Tools/PhoneSploit-Pro.md)
 - [AndroRAT](../../Tools/AndroRAT.md)
 - [AVG Antivirus](../../Tools/AVG-Antivirus.md)

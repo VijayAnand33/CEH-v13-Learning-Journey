@@ -6,7 +6,7 @@
 >
 > **Labs Completed:** 6
 >
-> **Tools Covered:** Responder, John the Ripper, Reverse Shell Generator, MSFVenom, Metasploit, Immunity Debugger, Spike, Mona, Netcat, Refog Personal Monitor, Registry Editor, wevtutil, Cipher, BASH, Nmap, Impacket, CrackMapExec, Remmina, PowerView, Hydra, WinPEAS, Rubeus, Hashcat, ShellGPT
+> **Tools Covered:** Responder, John the Ripper, Reverse Shell Generator, Metasploit, Immunity Debugger, Spike, Mona, Netcat, Refog Personal Monitor, Registry Editor, wevtutil, Cipher, BASH, Nmap, Impacket, CrackMapExec, Remmina, PowerView, Hydra, WinPEAS, Rubeus, Hashcat, ShellGPT
 
 ---
 
@@ -77,7 +77,6 @@ After completing this module, I was able to:
 - [John the Ripper](../../Tools/John-the-Ripper.md)
 - [Reverse Shell Generator](../../Tools/Reverse-Shell-Generator.md)
 - [Metasploit](../../Tools/Metasploit.md)
-- [MSFVenom](../../Tools/MSFVenom.md)
 - [Immunity Debugger](../../Tools/Immunity-Debugger.md)
 - [Spike](../../Tools/Spike.md)
 - [Mona](../../Tools/Mona.md)
@@ -390,7 +389,7 @@ This task demonstrated the complete exploit development lifecycle, from identify
 
 ### Bad Character Analysis
 
-![Bad Characters](Images/Lab1-No-Bad-Characters.png)
+![Bad Characters](Images/Lab1-No-Bad-Characters.png.jpg)
 
 **Figure 1.12:** Examination of the injected payload confirmed the absence of problematic characters that could interfere with shellcode execution during exploitation.
 
@@ -629,7 +628,7 @@ This task highlighted how attackers can maintain visibility into a compromised s
 
 ### Refog Dashboard Connected
 
-![Refog Dashboard](Images/Lab3-Refog-Online-Dashboard.png)
+![Refog Dashboard](Images/Lab3-Refog-Dashboard-Connected.png)
 
 **Figure 3.1:** The target Windows system successfully synchronized with the Refog online dashboard, confirming that the monitoring agent had been deployed and was actively communicating with the management portal.
 

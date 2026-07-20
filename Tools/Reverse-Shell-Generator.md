@@ -145,4 +145,4 @@ In **Module 06 – System Hacking**, Reverse Shell Generator was used to automat
 ## References
 
 - https://www.revshells.com/
-- https://github.com/t1m4/reverse-shell-generator
+- https://github.com/0dayCTF/reverse-shell-generator
