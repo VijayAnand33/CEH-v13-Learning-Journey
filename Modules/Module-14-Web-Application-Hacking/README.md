@@ -67,7 +67,14 @@ The following tools were used throughout this module to perform reconnaissance, 
 
 ---
 
-# Labs Covered
+| Lab | Description |
+|------|-------------|
+| Lab 1 | Footprint the Web Infrastructure |
+| Lab 2 | Perform Web Application Attacks |
+| Lab 3 | Detect Web Application Vulnerabilities |
+| Lab 4 | Perform AI-Assisted Web Application Testing |
+
+---
 
 # Lab 1 - Footprint the Web Infrastructure
 

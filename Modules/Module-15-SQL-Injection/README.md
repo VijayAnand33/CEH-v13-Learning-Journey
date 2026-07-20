@@ -77,15 +77,23 @@ After completing this module, I was able to:
 
 # Labs Covered
 
-## Lab 1 - Perform SQL Injection Attacks
+| Lab | Description |
+|------|-------------|
+| Lab 1 | Perform SQL Injection Attacks |
+| Lab 2 | Detect SQL Injection Vulnerabilities Using OWASP ZAP |
+| Lab 3 | Perform SQL Injection Using ShellGPT |
 
-### Objective
+---
+
+# Lab 1 - Perform SQL Injection Attacks
+
+## Objective
 
 To understand how SQL Injection vulnerabilities can be identified and exploited against a Microsoft SQL Server-backed web application using sqlmap to enumerate databases, extract sensitive information, and obtain operating system command execution.
 
 ---
 
-### Background
+## Background
 
 SQL Injection occurs when an application fails to properly validate user input before incorporating it into SQL queries. Attackers can exploit this weakness to manipulate database queries, retrieve confidential information, bypass authentication mechanisms, or even execute operating system commands depending on the database configuration.
 
@@ -93,15 +101,15 @@ This lab demonstrates the complete SQL Injection attack lifecycle, beginning wit
 
 ---
 
-### Task 1 - Perform SQL Injection Against MSSQL using sqlmap
+## Task 1 - Perform SQL Injection Against MSSQL using sqlmap
 
-#### Tools Used
+### Tools Used
 
 - [sqlmap](../../Tools/sqlmap.md)
 
 ---
 
-#### Activity Performed
+### Activity Performed
 
 An authenticated session was first established by logging into the vulnerable web application using valid user credentials. The session cookie obtained from the browser was supplied to sqlmap together with the vulnerable profile URL, allowing the tool to perform SQL Injection testing within the authenticated session.
 
@@ -109,7 +117,7 @@ sqlmap automatically identified the SQL Injection vulnerability, fingerprinted t
 
 ---
 
-#### Observations
+### Observations
 
 - Successfully authenticated to the vulnerable application.
 - Reused the authenticated session cookie during testing.
@@ -121,7 +129,7 @@ sqlmap automatically identified the SQL Injection vulnerability, fingerprinted t
 
 ---
 
-#### Database Enumeration
+### Database Enumeration
 
 ![Database Enumeration](Images/Lab1-sqlmap-Databases.png)
 
@@ -129,7 +137,7 @@ sqlmap automatically identified the SQL Injection vulnerability, fingerprinted t
 
 ---
 
-#### User Information Extraction
+### User Information Extraction
 
 ![User Login Table](Images/Lab1-sqlmap-UserLogin-Table.png)
 
@@ -137,7 +145,7 @@ sqlmap automatically identified the SQL Injection vulnerability, fingerprinted t
 
 ---
 
-#### Operating System Shell
+### Operating System Shell
 
 ![OS Shell](Images/Lab1-sqlmap-OS-Shell.png)
 
@@ -145,13 +153,13 @@ sqlmap automatically identified the SQL Injection vulnerability, fingerprinted t
 
 ---
 
-#### Learning Outcome
+### Learning Outcome
 
 This task demonstrated how authenticated SQL Injection vulnerabilities can be exploited to identify backend databases, enumerate sensitive information, and gain deeper access to compromised systems. I understood how sqlmap automates SQL Injection detection, database fingerprinting, enumeration, data extraction, and operating system command execution.
 
 ---
 
-#### Attack Flow
+### Attack Flow
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#D0E8FF', 'primaryTextColor': '#092B4B', 'primaryBorderColor': '#1C6DD0', 'lineColor': '#2A7EE0', 'secondaryColor': '#EBF5FF', 'tertiaryColor': '#BBDFFF'}}}%%
@@ -176,7 +184,7 @@ flowchart TD
 
 ---
 
-#### Overall Learning Outcome
+## Overall Learning Outcome
 
 This lab demonstrated the complete lifecycle of an authenticated SQL Injection attack. By exploiting insecure SQL queries, I learned how attackers enumerate databases, retrieve sensitive information, and escalate access beyond the database server. I also understood why proper input validation, parameterized queries, and least-privilege database configurations are essential for preventing SQL Injection attacks.
 

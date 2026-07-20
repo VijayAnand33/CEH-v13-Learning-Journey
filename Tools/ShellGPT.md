@@ -165,6 +165,7 @@
  - Module 13 – Hacking Web Servers
  - Module 14 – Web Application Hacking
  - Module 15 – SQL Injection
+ - Module 20 – Cryptography
 
  ---
 
@@ -180,3 +181,5 @@
  ## References
 
  - Official GitHub Repository: https://github.com/TheR1D/shell_gpt
+
+ ---

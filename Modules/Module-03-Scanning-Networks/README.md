@@ -69,12 +69,12 @@ After completing this module, I was able to:
 
 | Lab | Description |
 |------|-------------|
-| **Lab 1** | Perform Host Discovery |
-| **Lab 2** | Perform Port and Service Discovery |
-| **Lab 3** | Perform OS Discovery |
-| **Lab 4** | Scan Beyond IDS and Firewall |
-| **Lab 5** | Perform Network Scanning using Various Scanning Tools |
-| **Lab 6** | Perform Network Scanning using AI |
+| Lab 1 | Perform Host Discovery |
+| Lab 2 | Perform Port and Service Discovery |
+| Lab 3 | Perform OS Discovery |
+| Lab 4 | Scan Beyond IDS and Firewall |
+| Lab 5 | Perform Network Scanning using Various Scanning Tools |
+| Lab 6 | Perform Network Scanning using AI |
 
 ---
 

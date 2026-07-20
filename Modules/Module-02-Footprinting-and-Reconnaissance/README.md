@@ -87,6 +87,20 @@ After completing this module, I was able to:
 
 # Labs Covered
 
+| Lab | Description |
+|------|-------------|
+| Lab 1 | Perform Footprinting Through Search Engines |
+| Lab 2 | Perform Footprinting Through Internet Research Services |
+| Lab 3 | Perform Footprinting Through Social Networking Sites |
+| Lab 4 | Perform Whois Footprinting |
+| Lab 5 | Perform DNS Footprinting |
+| Lab 6 | Perform Network Footprinting |
+| Lab 7 | Perform Email Footprinting |
+| Lab 8 | Perform Footprinting using Various Footprinting Tools |
+| Lab 9 | Perform Footprinting using AI |
+
+---
+
 # Lab 1 - Perform Footprinting Through Search Engines
 
 ## Objective
