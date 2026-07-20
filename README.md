@@ -65,13 +65,15 @@ CEH-v13-Complete-Guide/
 
 ---
 
-# 📁 Repository Navigation
+# 📂 Repository Navigation
 
-- 📖 [Modules](Modules/)
-- 🛠 [Tools](Tools/)
-- 📚 [Cheat Sheets](Cheat-Sheets/)
-- 📂 [Resources](Resources/)
-- 🗺 [Roadmap](ROADMAP.md)
+| Section | Description |
+|---------|-------------|
+| 📖 [Modules](Modules/) | Complete documentation for all 20 CEH v13 modules. |
+| 🛠 [Tool Documentation](Tools/README.md) | Explore 90+ documented cybersecurity tools used throughout the CEH curriculum. |
+| 📚 [Cheat Sheets](Cheat-Sheets/) | Quick-reference notes and command summaries. |
+| 📂 [Resources](Resources/) | Additional learning materials and references. |
+| 🗺 [Learning Roadmap](ROADMAP.md) | Structured roadmap for mastering CEH v13. |
 
 ---
 

@@ -2,7 +2,7 @@
 
 Welcome to the **Tool Documentation** section of the **CEH v13 Complete Guide**.
 
-This directory contains **92 documented cybersecurity tools** used throughout the CEH v13 curriculum. Each tool page explains its purpose, key features, practical usage, workflow, advantages, limitations, references, and the CEH module(s) where it is used.
+This directory contains **90+ documented cybersecurity tools** used throughout the CEH v13 curriculum. Each tool page explains its purpose, key features, practical usage, workflow, advantages, limitations, references, and the CEH module(s) where it is used.
 
 Whether you're studying for the CEH exam or building practical penetration testing skills, this collection serves as a centralized reference for the tools encountered across all 20 CEH modules.
 
